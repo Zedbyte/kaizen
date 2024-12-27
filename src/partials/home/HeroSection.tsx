@@ -3,9 +3,10 @@ import profileAvatar from "@/assets/profile-avatar.png";
 
 export default function HeroSection() {
     return (
-        <section className="flex flex-col md:flex-row items-center md:space-x-8 space-y-8 md:space-y-0">
+        <section className="flex flex-col md:flex-row items-center space-y-8 
+        md:space-x-8 md:space-y-0 md:relative">
             {/* Text Content */}
-            <div className="md:w-1/2 space-y-4">
+            <div className="md:w-1/2 space-y-8">
             
                 <div className="space-y-12">
                     {/* Header Section */}
@@ -50,31 +51,33 @@ export default function HeroSection() {
             </div>
 
             {/* Image Content */}
-            <div className="md:w-1/2 flex flex-col space-y-3">
-                <figure className="flex items-end justify-center md:justify-end w-full">
-                    <img 
-                        src={profileAvatar}
-                        alt="Kaizen Profile Picture" 
-                        className="w-11/12 h-auto rounded-2xl"
-                    />
-                </figure>
-                <div className="text-end">
-                    <span className="flex items-center justify-end space-x-2">
-                        <svg fill="currentColor" viewBox="0 0 16 16" className="w-3 h-3">
-                            <path fillRule="evenodd" d="M4.854 1.146a.5.5 0 00-.708 0l-4 4a.5.5 0 10.708.708L4 2.707V12.5A2.5 2.5 0 006.5 15h8a.5.5 0 000-1h-8A1.5 1.5 0 015 12.5V2.707l3.146 3.147a.5.5 0 10.708-.708l-4-4z"/>
-                        </svg>
-                        <p className="font-mono text-sm">
-                        I am also interested in{' '}
-                        {Object.values(userData.header.image_caption)
-                            .map((field, index, arr) => (
-                            <span key={field} className="font-mono font-bold">
-                                {field}
-                                {index < arr.length - 2 ? ', ' : index === arr.length - 2 ? ', and ' : ''}
-                            </span>
-                            ))}
-                        .
-                        </p>
-                    </span>
+            <div className="md:w-1/2 md:absolute lg:-top-[80%] md:right-0">
+                <div className="flex flex-col space-y-3">
+                    <figure className="flex items-end justify-center md:justify-end w-full">
+                        <img 
+                            src={profileAvatar}
+                            alt="Kaizen Profile Picture" 
+                            className="w-11/12 h-auto rounded-2xl"
+                        />
+                    </figure>
+                    <div className="text-end hidden lg:block">
+                        <span className="flex items-center justify-end space-x-2">
+                            <svg fill="currentColor" viewBox="0 0 16 16" className="w-3 h-3">
+                                <path fillRule="evenodd" d="M4.854 1.146a.5.5 0 00-.708 0l-4 4a.5.5 0 10.708.708L4 2.707V12.5A2.5 2.5 0 006.5 15h8a.5.5 0 000-1h-8A1.5 1.5 0 015 12.5V2.707l3.146 3.147a.5.5 0 10.708-.708l-4-4z"/>
+                            </svg>
+                            <p className="font-mono text-sm">
+                            I am also interested in{' '}
+                            {Object.values(userData.header.image_caption)
+                                .map((field, index, arr) => (
+                                <span key={field} className="font-mono font-bold">
+                                    {field}
+                                    {index < arr.length - 2 ? ', ' : index === arr.length - 2 ? ', and ' : ''}
+                                </span>
+                                ))}
+                            .
+                            </p>
+                        </span>
+                    </div>
                 </div>
             </div>
         </section>
