@@ -1,4 +1,4 @@
-import NavigationBar from '../partials/NavigationBar'
+import NavigationBar from '@/partials/NavigationBar'
 
 interface RootLayoutProps {
   children: React.ReactNode;

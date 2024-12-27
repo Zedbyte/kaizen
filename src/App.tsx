@@ -1,5 +1,5 @@
-import RootLayout from './shared/RootLayout'
-import Home from './pages/Home'
+import RootLayout from '@/shared/RootLayout'
+import Home from '@/pages/Home'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 function App() {

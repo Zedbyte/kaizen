@@ -1,10 +1,10 @@
 import { Link, NavLink } from "react-router-dom";
-import { userData } from "../constants/data.ts";
-import "../index.css";
+import { userData } from "@/constants/data";
+import "@/index.css";
 
 function NavigationBar() {
     return (
-        <div className="max-w-6xl mx-auto px-4 py-10">
+        <div className="max-w-6xl mx-auto px-4 py-10 md:py-20">
             <nav className="flex md:flex-row justify-between items-center">
                 <div className="flex flex-col">
                     <Link to="/">
