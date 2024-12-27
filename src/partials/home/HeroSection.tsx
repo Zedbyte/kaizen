@@ -3,14 +3,14 @@ import profileAvatar from "@/assets/profile-avatar.png";
 
 export default function HeroSection() {
     return (
-        <section className="flex flex-col md:flex-row items-center space-y-8 
+        <section className="flex flex-col-reverse md:flex-row items-center gap-10 md:gap-0
         md:space-x-8 md:space-y-0 md:relative">
             {/* Text Content */}
             <div className="md:w-1/2 space-y-8">
             
                 <div className="space-y-12">
                     {/* Header Section */}
-                    <header className="space-y-4 text-center md:text-start">
+                    <header className="space-y-4 md:text-start">
                         <h1 className="text-4xl font-base">
                             <span className="font-bold">{userData.header.title_bold}</span> {userData.header.title}
                         </h1>
@@ -20,8 +20,8 @@ export default function HeroSection() {
                     </header>
 
                     {/* Paragraph Section */}
-                    <p className="text-lg text-center md:text-start">
-                        A {userData.age}-year-old <span className="font-bold">{userData.header.role}</span> based in {userData.location}
+                    <p className="text-lg  md:text-start">
+                        A {userData.age}-year-old <span className="font-bold">{userData.header.role}</span> based in {userData.province}, <br/> {userData.country}.
                     </p>
                 </div>
 
@@ -51,13 +51,13 @@ export default function HeroSection() {
             </div>
 
             {/* Image Content */}
-            <div className="md:w-1/2 md:absolute lg:-top-[80%] md:right-0">
+            <div className="md:w-1/2 md:absolute lg:-top-[50%] md:right-0">
                 <div className="flex flex-col space-y-3">
                     <figure className="flex items-end justify-center md:justify-end w-full">
                         <img 
                             src={profileAvatar}
                             alt="Kaizen Profile Picture" 
-                            className="w-11/12 h-auto rounded-2xl"
+                            className="w-6/12 md:w-11/12 h-auto rounded-2xl border border-gray-900 shadow-lg md:border-0 md:shadow-none"
                         />
                     </figure>
                     <div className="text-end hidden lg:block">

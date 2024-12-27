@@ -2,7 +2,8 @@ export const userData = {
     name: 'Mark Santos',
     age: 20,
     designation: 'Junior Software Engineer',
-    location: 'Pampanga, Philippines',
+    province: 'Pampanga',
+    country: 'Philippines',
     header: {
         title_bold: 'AUF',
         title: 'BS, Information Technology',

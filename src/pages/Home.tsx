@@ -1,4 +1,5 @@
 import HeroSection from '@/partials/home/HeroSection'
+import RecentProjectsSection from '@/partials/home/RecentProjectsSection'
 
 export default function Home() {
     return(
@@ -9,8 +10,8 @@ export default function Home() {
                 </div>
             </div>
             <div className="recent-projects-block bg-black">
-                <div className="max-w-6xl mx-auto px-4 py-10">
-                    
+                <div className="max-w-6xl mx-auto px-4 pt-40 pb-10">
+                    <RecentProjectsSection />
                 </div>
             </div>
         </>
