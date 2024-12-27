@@ -5,11 +5,15 @@ export const userData = {
     location: 'Pampanga, Philippines',
     header: {
         title_bold: 'AUF',
-        title: 'Information Technology',
-        subtitle_bold: 'One',
-        subtitle: 'Pixel at a Time',
+        title: 'BS, Information Technology',
+        subtitle_bold: 'Web and Mobile Technologies',
+        subtitle: 'Major',
         role: 'software engineer',
-        image: 'https://avatars.githubusercontent.com/u/77468756?v=4'
+        image: '@/assets/profile-avatar.png',
+        image_caption: {
+            field1: 'Cybersecurity',
+            field2: 'Machine Learning',
+        }
     }
 }
 
