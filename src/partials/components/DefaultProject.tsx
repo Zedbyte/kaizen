@@ -61,7 +61,7 @@ export default function Project({ data }: ProjectProps) {
                 </div>
 
                 {/* Rotating Link */}
-                <div id="container" className="-top-[40%] -right-[20%]">
+                <div id="container" className="-top-[45%] -right-[25%]">
                     <div id="circle">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -96,10 +96,9 @@ export default function Project({ data }: ProjectProps) {
                         {isExpanded ? "View Less" : "View More"}
                         </button>
                     </div>
-                    <button 
-                        className="bg-gray-700 text-white font-medium w-2/5 py-2 rounded hover:bg-gray-600 transition duration-300"
-                    >
-                        <p>Learn More</p>
+                    <button className="relative overflow-hidden border-2 border-gray-700 text-white font-medium w-2/5 py-2 rounded transition duration-300 group">
+                        <p className="relative z-10">Learn More</p>
+                        <span className="absolute inset-0 bg-gray-700 transition-all duration-300 transform -translate-x-full group-hover:translate-x-0"></span>
                     </button>
                 </div>
             </div>  
