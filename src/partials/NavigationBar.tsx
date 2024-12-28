@@ -2,7 +2,7 @@ import { Link, NavLink } from "react-router-dom";
 import { userData } from "@/constants/data";
 import "@/index.css";
 
-function NavigationBar() {
+export default function NavigationBar() {
     return (
         <div className="max-w-6xl mx-auto px-4 py-10 md:py-20">
             <nav className="flex md:flex-row justify-between items-center">
@@ -103,5 +103,3 @@ function NavigationBar() {
         </div>
     );
 }
-
-export default NavigationBar;
