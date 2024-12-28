@@ -1,8 +1,7 @@
 #container {
     margin: 0;
     position: absolute;
-    top: -40%;
-    right: -20%;
+    pointer-events: none;
 }
 
 #circle {
@@ -10,7 +9,6 @@
     width: 400px;
     height: 400px;
     overflow: hidden;
-    pointer-events: none;
 }
 
 #circle text {

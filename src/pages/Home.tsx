@@ -4,7 +4,7 @@ import RecentProjectsSection from '@/partials/home/RecentProjectsSection'
 export default function Home() {
     return(
         <>
-            <div className='hero-block md:min-h-[28rem] md:h-[28rem]'>
+            <div className='hero-block md:min-h-[30rem] md:h-[30rem]'>
                 <div className="max-w-6xl mx-auto px-4 py-10 h-full flex flex-col justify-end">  
                     <HeroSection />
                 </div>

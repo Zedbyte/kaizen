@@ -11,10 +11,10 @@ export default function HeroSection() {
                 <div className="space-y-12">
                     {/* Header Section */}
                     <header className="space-y-4 md:text-start">
-                        <h1 className="text-4xl font-base">
+                        <h1 className="text-4xl font-base text-nowrap">
                             <span className="font-bold">{userData.header.title_bold}</span> {userData.header.title}
                         </h1>
-                        <h2 className="text-2xl font-medium">
+                        <h2 className="text-2xl font-medium text-nowrap">
                             <span className="font-bold">{userData.header.subtitle_bold}</span> {userData.header.subtitle}
                         </h2>
                     </header>
@@ -27,16 +27,15 @@ export default function HeroSection() {
 
                 {/* Button Section */}
                 <div className="flex w-full space-x-4">
-                    <button
-                        className="bg-white text-black border border-gray-300 font-medium w-3/5 py-2 rounded hover:bg-gray-300 transition duration-300"
-                    >
+                    <a href="https://calendly.com/kaizxn/consultation" target="_blank" rel="noopener noreferrer"
+                    className="bg-white text-black border border-gray-300 font-medium w-3/5 py-2 rounded hover:bg-gray-300 transition duration-300">
                         <span className="flex items-center justify-center space-x-2">
                             <svg className="w-5 h-5 text-gray-800 dark:text-[#0f0f0f]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                                 <path fillRule="evenodd" d="M5 5a1 1 0 0 0 1-1 1 1 0 1 1 2 0 1 1 0 0 0 1 1h1a1 1 0 0 0 1-1 1 1 0 1 1 2 0 1 1 0 0 0 1 1h1a1 1 0 0 0 1-1 1 1 0 1 1 2 0 1 1 0 0 0 1 1 2 2 0 0 1 2 2v1a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a2 2 0 0 1 2-2ZM3 19v-7a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Zm6.01-6a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm2 0a1 1 0 1 1 2 0 1 1 0 0 1-2 0Zm6 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm-10 4a1 1 0 1 1 2 0 1 1 0 0 1-2 0Zm6 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm2 0a1 1 0 1 1 2 0 1 1 0 0 1-2 0Z" clipRule="evenodd"/>
                             </svg>
                             <p>Schedule a <span className="font-bold">Call</span></p>
                         </span>
-                    </button>
+                    </a>
                     <button
                         className="bg-gray-700 text-white font-medium w-2/5 py-2 rounded hover:bg-gray-600 transition duration-300"
                     >
@@ -51,7 +50,7 @@ export default function HeroSection() {
             </div>
 
             {/* Image Content */}
-            <div className="md:w-1/2 md:absolute lg:-top-[50%] md:right-0">
+            <div className="md:w-1/2 md:absolute lg:-top-[80%] md:right-0">
                 <div className="flex flex-col space-y-3">
                     <figure className="flex items-end justify-center md:justify-end w-full">
                         <img 
