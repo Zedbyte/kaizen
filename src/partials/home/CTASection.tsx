@@ -27,6 +27,7 @@ export default function CTASection() {
                     direction: 225,
                     backgroundColor: ['#0e1118', '#0C0C0C'],
                     randomOpacity: true,
+                    frequency: 30,
                 });
             }
         };
