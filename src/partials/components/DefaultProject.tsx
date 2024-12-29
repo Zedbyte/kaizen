@@ -21,8 +21,8 @@ export default function Project({ data }: ProjectProps) {
 
     return (
         <div className="col-span-12 relative flex justify-end ">
-            <figure className="group relative w-8/12">
-                <div className="overflow-hidden shadow-lg">
+            <figure className="relative w-8/12">
+                <div className="group overflow-hidden shadow-lg">
                     {/* Image with Zoom Effect */}
                     <img
                         src={data.src}
