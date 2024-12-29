@@ -76,7 +76,7 @@ export default function Project({ data }: ProjectProps) {
                             <circle cx="150" cy="150" r="75" fill="none" stroke="none" />
                             <g>
                                 <use href="#circlePath" fill="none" />
-                                <text fill="currentColor">
+                                <text fill="currentColor" onClick={() => window.open(data.link, "_blank")}>
                                     <textPath href="#circlePath">
                                         {data.link.toUpperCase()}
                                     </textPath>

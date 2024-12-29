@@ -17,6 +17,7 @@
     letter-spacing: 3px;
     font-weight: light;
     color: #e2e2e2;
+    cursor: pointer;
 }
 
 #circle svg {
@@ -29,6 +30,7 @@
     animation-duration: 40s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+    pointer-events: visible;
 }
 
 @keyframes rotate {
