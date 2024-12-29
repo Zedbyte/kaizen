@@ -48,3 +48,4 @@ export const projectData = {
     }
 }
 
+export const projectColors = ['bg-[#1c232d]', 'bg-[#1f2124]', 'bg-[#161824]'];

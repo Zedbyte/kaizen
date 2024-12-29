@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { forwardRef, useState } from "react";
 
 interface ProjectProps {
     data: {
@@ -12,7 +12,7 @@ interface ProjectProps {
 }
 
 
-export default function Project({ data }: ProjectProps) {
+const ReversedProject = forwardRef<HTMLDivElement, ProjectProps>(({ data }, ref) => {
     const [isExpanded, setIsExpanded] = useState(false);
 
     const toggleExpand = () => {
@@ -20,7 +20,7 @@ export default function Project({ data }: ProjectProps) {
     };
 
     return (
-        <div className="col-span-12 relative flex justify-start ">
+        <div ref={ref} className="col-span-12 relative flex justify-start ">
             <figure className="relative w-8/12">
                 <div className="group overflow-hidden shadow-lg">
                     {/* Image with Zoom Effect */}
@@ -104,4 +104,6 @@ export default function Project({ data }: ProjectProps) {
             </div>  
         </div>
     );
-}
+});
+
+export default ReversedProject;
