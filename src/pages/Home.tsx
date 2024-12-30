@@ -42,10 +42,6 @@ export default function Home() {
             <div className={`recent-projects-block transition-colors duration-500 ${bgColor}`} ref={recentProjectsBlockRef}>
                 <div className="max-w-6xl mx-auto px-4 pt-10 md:pt-64 pb-96">
                     <RecentProjectsSection projectRefs={projectRefs} />
-
-                    {/* <div className='cta-block bg-[#0A0A0A] mt-44 md:mt-96 mb-10 rounded-lg'>
-                        <CTASection />
-                    </div> */}
                 </div>
             </div>
 
