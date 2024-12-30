@@ -1,6 +1,6 @@
 import { projectData } from "@/constants/data";
-import DefaultProject from "../components/DefaultProject";
-import ReversedProject from "../components/ReversedProject";
+import DefaultProject from "../components/home/DefaultProject";
+import ReversedProject from "../components/home/ReversedProject";
 import '/public/css/project-link.css';
 
 interface RecentProjectsProps {
@@ -32,7 +32,7 @@ export default function RecentProjectsSection({ projectRefs }: RecentProjectsPro
             </div>
 
             {/* Projects */}
-            <div className="grid grid-cols-1 md:grid-cols-12 gap-y-20 md:gap-y-64">
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-y-20 md:gap-y-40">
                 <DefaultProject ref={projectRefs[0]} data={projectData.pharmasync} />
                 <ReversedProject ref={projectRefs[1]} data={projectData.draco} />
                 <DefaultProject ref={projectRefs[2]} data={projectData.nexus} />
