@@ -1,52 +1,53 @@
 import PersonalLinks from "@/partials/components/about/PersonalLinks";
+import SubHeading from "@/partials/components/about/Subheading";
+import InfoBlock from "@/partials/components/about/InfoBlock";
 
 export default function ContentSection() {
     return (
         <section className="content-block bg-[#0A0A0A] px-10">
             <div className="max-w-6xl mx-auto px-4 py-20 h-full space-y-20">
-                <article>
-                    <p className="text-3xl font-semibold">
-                        Hi, I'm a full stack engineer specializing in developing solutions with JavaScript, Python, 
-                        and PHP with frameworks like .NET, and React.
-                    </p>
-                </article>
+                <SubHeading />
 
                 <div className="grid grid-cols-12 gap-24">
                     {/* Contact Section */}
                     <aside className="col-span-4 space-y-10">
                         {/* Contact */}
-                        <div className="space-y-6">
-                            <h2 className="text-lg font-semibold">Contact</h2>
-                            <p className="text-justify">
-                                For any sort of help or inquiries, feel free to reach out on my&nbsp;
-                                <a 
-                                    href="mailto:markjeromesantos102@gmail.com" 
-                                    target="_blank" 
-                                    rel="noopener noreferrer"
-                                    className="dark:text-white font-bold underline"
-                                >
-                                    email
-                                </a>
-                                &nbsp;and I'll get back to you as soon as possible.
-                            </p>
-                        </div>
+                        <InfoBlock
+                            title="Contact"
+                            description={
+                                <>
+                                    For any sort of help or inquiries, feel free to reach out on my&nbsp;
+                                    <a 
+                                        href="mailto:markjeromesantos102@gmail.com" 
+                                        target="_blank" 
+                                        rel="noopener noreferrer"
+                                        className="dark:text-white font-bold underline"
+                                    >
+                                        email
+                                    </a>
+                                    &nbsp;and I'll get back to you as soon as possible.
+                                </>
+                            }
+                        />
 
                         {/* Freelancing */}
-                        <div className="space-y-6">
-                            <h2 className="text-lg font-semibold">Want to hire me as a freelancer?</h2>
-                            <p className="text-justify ">
+                        <InfoBlock
+                            title="Want to hire me as a freelancer?"
+                            description={
+                                <>
                                 Schedule a&nbsp;
-                                <a 
-                                    href="mailto:markjeromesantos102@gmail.com" 
-                                    target="_blank" 
-                                    rel="noopener noreferrer"
-                                    className="dark:text-white font-bold underline"
-                                >
-                                    free consultation
-                                </a>
+                                    <a 
+                                        href="mailto:markjeromesantos102@gmail.com" 
+                                        target="_blank" 
+                                        rel="noopener noreferrer"
+                                        className="dark:text-white font-bold underline"
+                                    >
+                                        free consultation
+                                    </a>
                                 &nbsp;with me and we can discuss your project.
-                            </p>
-                        </div>
+                                </>
+                            }
+                        />
 
                         {/* Social Links */}
                         <div className="space-y-3">
@@ -129,7 +130,10 @@ export default function ContentSection() {
                     {/* Description Section */}
                     <article className="col-span-8">
                         <p>
-                            I work with clients to develop custom software solutions that meet their needs.
+                            I work with clients to develop custom software solutions that meet their needs. I 
+                            specialize in building websites, web applications, mobile apps, console programs, desktop apps, and full-stack software development.
+                            <br />
+                            I've
                         </p>
                     </article>
                 </div>
