@@ -3,11 +3,7 @@ import DefaultProject from "../components/home/DefaultProject";
 import ReversedProject from "../components/home/ReversedProject";
 import '/public/css/project-link.css';
 
-interface RecentProjectsProps {
-    projectRefs: React.RefObject<HTMLDivElement>[];
-}
-
-export default function RecentProjectsSection({ projectRefs }: RecentProjectsProps) {
+export default function RecentProjectsSection() {
     return (
         <section className="space-y-10 md:space-y-20">
             {/* Recent Projects */}
@@ -33,9 +29,9 @@ export default function RecentProjectsSection({ projectRefs }: RecentProjectsPro
 
             {/* Projects */}
             <div className="grid grid-cols-1 md:grid-cols-12 gap-y-20 md:gap-y-40">
-                <DefaultProject ref={projectRefs[0]} data={projectData.pharmasync} />
-                <ReversedProject ref={projectRefs[1]} data={projectData.draco} />
-                <DefaultProject ref={projectRefs[2]} data={projectData.nexus} />
+                <DefaultProject data={projectData.pharmasync} />
+                <ReversedProject data={projectData.draco} />
+                <DefaultProject data={projectData.nexus} />
             </div>
         </section>
     );

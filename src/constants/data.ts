@@ -10,7 +10,7 @@ export const userData = {
         subtitle_bold: 'Web and Mobile',
         subtitle: 'Technologies Specialist',
         role: 'software engineer',
-        image: '@/assets/profile-avatar.png',
+        image: '@/assets/profile-avatar-v2.png',
         image_caption: {
             field1: 'Cybersecurity',
             field2: 'Machine Learning',
@@ -47,5 +47,3 @@ export const projectData = {
         src: "https://www.jimtech.solutions/_next/image?url=https%3A%2F%2Fgtzjphqvqypihgwyvbrl.supabase.co%2Fstorage%2Fv1%2Frender%2Fimage%2Fpublic%2Fprojects%2Fchitchat-thumbnail.png%3Fwidth%3D1920%26height%3D1080&w=1920&q=75"
     }
 }
-
-export const projectColors = ['bg-[#1c232d]', 'bg-[#1f2124]', 'bg-[#161824]'];

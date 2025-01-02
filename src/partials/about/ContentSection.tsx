@@ -1,5 +1,5 @@
 import PersonalLinks from "@/partials/components/about/PersonalLinks";
-import SubHeading from "@/partials/components/about/Subheading";
+import SubHeading from "@/partials/components/about/SubHeading";
 import InfoBlock from "@/partials/components/about/InfoBlock";
 
 export default function ContentSection() {
@@ -133,7 +133,7 @@ export default function ContentSection() {
                             I work with clients to develop custom software solutions that meet their needs. I 
                             specialize in building websites, web applications, mobile apps, console programs, desktop apps, and full-stack software development.
                             <br />
-                            I've
+                            I've 
                         </p>
                     </article>
                 </div>
