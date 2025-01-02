@@ -15,7 +15,7 @@ export default function Home() {
                     <HeroSection />
                 </div>
             </div>
-            {/* <div className='recent-projects-block transition-colors duration-500'>
+            <div className='recent-projects-block transition-colors duration-500'>
                 <div className="max-w-6xl mx-auto px-4 pt-10 md:pt-64 pb-64">
                     <RecentProjectsSection />
                 </div>
@@ -25,7 +25,7 @@ export default function Home() {
                 <div className="max-w-6xl mx-auto px-4 pt-10 pb-10">
                     <CTASection />
                 </div>
-            </div>  */}
+            </div> 
         </>
     );
 }
