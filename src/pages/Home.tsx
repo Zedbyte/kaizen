@@ -5,12 +5,17 @@ import CTASection from '@/partials/home/CTASection';
 export default function Home() {
     return (
         <>
-            <div className='hero-block h-full'>
+            {/* <div className='hero-block h-full'>
                 <div className="max-w-6xl mx-auto px-4 py-10 h-full flex flex-col justify-end">
                     <HeroSection />
                 </div>
+            </div> */}
+            <div className='hero-block relative'>
+                <div className="max-w-6xl mx-auto h-full flex flex-col items-center justify-center">
+                    <HeroSection />
+                </div>
             </div>
-            <div className='recent-projects-block transition-colors duration-500'>
+            {/* <div className='recent-projects-block transition-colors duration-500'>
                 <div className="max-w-6xl mx-auto px-4 pt-10 md:pt-64 pb-64">
                     <RecentProjectsSection />
                 </div>
@@ -20,7 +25,7 @@ export default function Home() {
                 <div className="max-w-6xl mx-auto px-4 pt-10 pb-10">
                     <CTASection />
                 </div>
-            </div> 
+            </div>  */}
         </>
     );
 }

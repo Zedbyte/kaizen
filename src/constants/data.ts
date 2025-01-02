@@ -1,5 +1,6 @@
 export const userData = {
     name: 'Mark Santos',
+    full_name: 'Mark Jerome Santos',
     age: 20,
     designation: 'Junior Software Engineer',
     province: 'Pampanga',
@@ -9,7 +10,7 @@ export const userData = {
         title: 'Software Engineer',
         subtitle_bold: 'Web and Mobile',
         subtitle: 'Technologies Specialist',
-        role: 'software engineer',
+        role: 'full-stack software engineer',
         image: '@/assets/profile-avatar-v2.png',
         image_caption: {
             field1: 'Cybersecurity',

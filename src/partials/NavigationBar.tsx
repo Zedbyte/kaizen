@@ -4,7 +4,7 @@ import "@/index.css";
 
 export default function NavigationBar() {
     return (
-        <div className="max-w-6xl mx-auto px-4 py-10 md:py-20">
+        <div className="max-w-6xl mx-auto px-4 py-10 md:py-13">
             <nav className="flex md:flex-row justify-between items-center">
                 <div className="flex flex-col">
                     <Link to="/">
