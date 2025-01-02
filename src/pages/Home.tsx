@@ -15,6 +15,11 @@ export default function Home() {
                     <HeroSection />
                 </div>
             </div>
+            <div className='hero-block relative'>
+                <div className="max-w-6xl mx-auto h-full flex flex-col items-center justify-center">
+                    tech stack
+                </div>
+            </div>
             <div className='recent-projects-block transition-colors duration-500'>
                 <div className="max-w-6xl mx-auto px-4 pt-10 md:pt-64 pb-64">
                     <RecentProjectsSection />

@@ -13,6 +13,12 @@
     font-family: "Poppins", sans-serif;
 }
 
+body {
+  background-color: #0A0A0A;
+  background-image: url('@/assets/noise-light.png'), url('@/assets/noise-light.png'), url('@/assets/noise-light.png');
+  background-blend-mode: overlay;
+}
+
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
