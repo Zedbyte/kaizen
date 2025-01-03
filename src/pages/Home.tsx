@@ -6,7 +6,7 @@ import Grid from '@/components/custom/Grid';
 export default function Home() {
     return (
         <>
-            <div className='hero-block h-full relative border border-zinc-800'>
+            <div className='hero-block h-full relative'>
                 <Grid />
                 <div className="max-w-6xl mx-auto h-full flex flex-col items-center justify-center">
                     <HeroSection />
@@ -14,7 +14,7 @@ export default function Home() {
             </div>
             <div className='hero-block relative'>
                 <div className="max-w-6xl mx-auto h-full flex flex-col items-center justify-center">
-                    tech stack
+                    {/* tech stack */}
                 </div>
             </div>
             <div className='recent-projects-block transition-colors duration-500'>

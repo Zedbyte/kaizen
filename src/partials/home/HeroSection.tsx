@@ -1,6 +1,8 @@
 import { userData } from "@/constants/data";
-import { Reveal } from "@/motion-components/Reveal";
+import { Reveal } from "@/components/motion-components/Reveal";
+import { ACButtonGradient } from "@/components/aceternity-components/HoverBorderGradient";
 import profileAvatar from "@/assets/profile-avatar-v4.png";
+import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
 
 export default function HeroSection() {
     return (
@@ -49,6 +51,7 @@ export default function HeroSection() {
 
                 {/* Button Section */}
                 <div className="flex w-6/12 space-x-9">
+                    {/* Schedule a Call Button  */}
                     <a href="https://calendly.com/kaizxn/consultation" target="_blank" rel="noopener noreferrer"
                     className="bg-[#1e1e1e] text-white font-medium w-full py-2 rounded-full hover:bg-[#2b2b2b] transition duration-300">
                         <span className="flex items-center justify-center space-x-2">
@@ -66,7 +69,29 @@ export default function HeroSection() {
                             </svg>
                         </span>
                     </a>
-                    <button
+
+                    {/* View Resume Button */}
+                    <a href="https://google.com" target="_blank" className="flex justify-center text-center w-full">
+                        <HoverBorderGradient
+                            containerClassName="rounded-full"
+                            as="button"
+                            className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2 w-full hover:bg-zinc-950 transition duration-200"
+                        >
+                            <p>View Resume</p>
+                            <svg
+                                width="1em"
+                                height="1em"
+                                fill="currentColor"
+                                viewBox="0 0 16 16"
+                            >
+                                <path
+                                fillRule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                                />
+                            </svg>
+                        </HoverBorderGradient>
+                    </a>
+                    {/* <button
                         className="bg-transparent border border-white text-white font-medium w-full py-2 rounded-full hover:bg-white hover:text-black transition duration-300"
                     >
                         <span className="flex items-center justify-center space-x-2">
@@ -83,7 +108,7 @@ export default function HeroSection() {
                                 />
                             </svg>
                         </span>
-                    </button>
+                    </button> */}
                 </div>
             </section>
         </>

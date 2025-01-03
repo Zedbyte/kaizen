@@ -1,11 +1,11 @@
 import { Link, NavLink } from "react-router-dom";
 import { userData } from "@/constants/data";
-import { Reveal } from "@/motion-components/Reveal";
+import { Reveal } from "@/components/motion-components/Reveal";
 import "@/index.css";
 
 export default function NavigationBar() {
     return (
-        <div className="max-w-6xl mx-auto px-4 py-10 md:py-13 border-x border-zinc-800">
+        <div className="max-w-6xl mx-auto px-4 py-10 md:py-13">
             <nav className="flex md:flex-row justify-between items-center">
                 <div className="flex flex-col">
                     <Reveal>
