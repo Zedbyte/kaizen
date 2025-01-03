@@ -2,6 +2,7 @@ import { userData } from "@/constants/data";
 import { Reveal } from "@/components/motion-components/Reveal";
 import profileAvatar from "@/assets/profile-avatar-v4.png";
 import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
+import { FlipWords } from "@/components/ui/flip-words";
 
 export default function HeroSection() {
     return (
@@ -42,7 +43,9 @@ export default function HeroSection() {
                     <Reveal>
                         <h2 className="text-xl text-center">
                         A {userData.age}-year-old&nbsp;
-                        <span className="font-bold text-[#AA9D7D]">{userData.header.role}</span>
+                        <span>
+                            <FlipWords className="font-bold text-[#AA9D7D]" words={userData.header.role} />
+                        </span>
                         &nbsp;<br />based in {userData.province}, {userData.country}.</h2>
                     </Reveal>
                 </div>
@@ -74,7 +77,7 @@ export default function HeroSection() {
                         <HoverBorderGradient
                             containerClassName="rounded-full"
                             as="button"
-                            className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2 w-full hover:bg-zinc-950 transition duration-200"
+                            className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2 w-full"
                         >
                             <p>View Resume</p>
                             <svg
@@ -90,24 +93,6 @@ export default function HeroSection() {
                             </svg>
                         </HoverBorderGradient>
                     </a>
-                    {/* <button
-                        className="bg-transparent border border-white text-white font-medium w-full py-2 rounded-full hover:bg-white hover:text-black transition duration-300"
-                    >
-                        <span className="flex items-center justify-center space-x-2">
-                            <p>View <span className="font-bold">Resume</span></p>
-                            <svg
-                                width="1em"
-                                height="1em"
-                                fill="currentColor"
-                                viewBox="0 0 16 16"
-                            >
-                                <path
-                                fillRule="evenodd"
-                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
-                                />
-                            </svg>
-                        </span>
-                    </button> */}
                 </div>
             </section>
         </>

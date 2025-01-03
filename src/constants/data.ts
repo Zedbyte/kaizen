@@ -10,7 +10,7 @@ export const userData = {
         title: 'Software Engineer',
         subtitle_bold: 'Web and Mobile',
         subtitle: 'Technologies Specialist',
-        role: 'full-stack software engineer',
+        role: ['full-stack software engineer', 'web developer', 'mobile app developer', 'desktop app developer'],
         image: '@/assets/profile-avatar-v2.png',
         image_caption: {
             field1: 'Cybersecurity',
