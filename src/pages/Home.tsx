@@ -1,16 +1,13 @@
 import HeroSection from '@/partials/home/HeroSection';
 import RecentProjectsSection from '@/partials/home/RecentProjectsSection';
 import CTASection from '@/partials/home/CTASection';
+import Grid from '@/components/custom/Grid';
 
 export default function Home() {
     return (
         <>
-            {/* <div className='hero-block h-full'>
-                <div className="max-w-6xl mx-auto px-4 py-10 h-full flex flex-col justify-end">
-                    <HeroSection />
-                </div>
-            </div> */}
-            <div className='hero-block relative'>
+            <div className='hero-block h-full relative border border-zinc-800'>
+                <Grid />
                 <div className="max-w-6xl mx-auto h-full flex flex-col items-center justify-center">
                     <HeroSection />
                 </div>

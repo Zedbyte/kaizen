@@ -7,9 +7,9 @@ export default function HeroSection() {
         <>
             <section className="flex items-center justify-center h-[30rem]">
                 {/* Full Name */}
-                    <h1 className="absolute inset-x-0 flex justify-center text-[10rem] font-bold">
+                    <h1 className="absolute inset-x-0 flex justify-center text-[12rem] font-bold">
                         <Reveal>
-                            <span>{userData.full_name}</span>                
+                            <span>{userData.name}</span>                
                         </Reveal>
                     </h1>
 
@@ -23,7 +23,7 @@ export default function HeroSection() {
                 </figure>
             </section>
 
-            <section className="flex flex-col items-center justify-center h-full space-y-14 max-w-4xl">
+            <section className="flex flex-col items-center justify-center h-full space-y-10 max-w-4xl py-5">
                 <div className="space-y-8 flex flex-col items-center">
                     {/* Job Role */}
                     <Reveal>
@@ -39,7 +39,7 @@ export default function HeroSection() {
                     </Reveal>
 
                     <Reveal>
-                        <h2 className="text-2xl text-center">
+                        <h2 className="text-xl text-center">
                         A {userData.age}-year-old&nbsp;
                         <span className="font-bold text-[#AA9D7D]">{userData.header.role}</span>
                         &nbsp;<br />based in {userData.province}, {userData.country}.</h2>
