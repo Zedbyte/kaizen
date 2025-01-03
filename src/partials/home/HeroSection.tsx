@@ -9,7 +9,7 @@ export default function HeroSection() {
         <>
             <section className="flex items-center justify-center h-[30rem]">
                 {/* Full Name */}
-                    <h1 className="absolute inset-x-0 flex justify-center text-[12rem] font-bold">
+                    <h1 className="absolute inset-x-0 flex justify-center text-[12rem] font-bold max-w-6xl mx-auto">
                         <Reveal>
                             <span>{userData.name}</span>                
                         </Reveal>

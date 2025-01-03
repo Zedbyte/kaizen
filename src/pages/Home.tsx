@@ -1,4 +1,5 @@
 import HeroSection from '@/partials/home/HeroSection';
+import TechStackSection from '@/partials/home/TechStackSection';
 import RecentProjectsSection from '@/partials/home/RecentProjectsSection';
 import CTASection from '@/partials/home/CTASection';
 import Grid from '@/components/custom/Grid';
@@ -6,15 +7,15 @@ import Grid from '@/components/custom/Grid';
 export default function Home() {
     return (
         <>
-            <div className='hero-block h-full relative'>
+            <div className='hero-block h-full relative border border-zinc-800'>
                 <Grid />
-                <div className="max-w-6xl mx-auto h-full flex flex-col items-center justify-center">
+                <div className="max-w-6xl mx-auto h-full flex flex-col items-center justify-center border-x border-zinc-800">
                     <HeroSection />
                 </div>
             </div>
-            <div className='hero-block relative'>
-                <div className="max-w-6xl mx-auto h-full flex flex-col items-center justify-center">
-                    {/* tech stack */}
+            <div className='tech-stack-block border-b border-zinc-800'>
+                <div className="max-w-6xl mx-auto h-full flex flex-col items-center justify-center border-x border-zinc-800">
+                    <TechStackSection />
                 </div>
             </div>
             <div className='recent-projects-block transition-colors duration-500'>
