@@ -19,7 +19,7 @@ export default function Home() {
                 </div>
             </div>
             <div className='recent-projects-block transition-colors duration-500'>
-                <div className="max-w-6xl mx-auto px-4 pt-10 md:pt-64 pb-64">
+                <div className="max-w-6xl mx-auto px-4 pt-10">
                     <RecentProjectsSection />
                 </div>
             </div>

@@ -3,11 +3,17 @@ import { Reveal } from "@/components/motion-components/Reveal";
 import profileAvatar from "@/assets/profile-avatar-v4.png";
 import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
 import { FlipWords } from "@/components/ui/flip-words";
+import { AuroraBackground } from "@/components/ui/aurora-background";
 
 export default function HeroSection() {
     return (
         <>
+            <AuroraBackground>
             <section className="flex items-center justify-center h-[30rem]">
+                {/* <Spotlight
+                    className="-top-40 left-0 md:left-[40rem] md:-top-20"
+                    fill="white"
+                /> */}
                 {/* Full Name */}
                     <h1 className="absolute inset-x-0 flex justify-center text-[12rem] font-bold max-w-6xl mx-auto">
                         <Reveal>
@@ -55,7 +61,9 @@ export default function HeroSection() {
                 <div className="flex w-6/12 space-x-9">
                     {/* Schedule a Call Button  */}
                     <a href="https://calendly.com/kaizxn/consultation" target="_blank" rel="noopener noreferrer"
-                    className="bg-[#1e1e1e] text-white font-medium w-full py-2 rounded-full hover:bg-[#2b2b2b] transition duration-300">
+                    className="bg-[#1e1e1e] text-white font-medium w-full py-2 rounded-full 
+                    hover:bg-[#2b2b2b] border border-neutral-700 shadow-lg
+                    transition duration-300 flex items-center justify-center">
                         <span className="flex items-center justify-center space-x-2">
                             <p>Schedule A Call</p>
                             <svg
@@ -95,6 +103,7 @@ export default function HeroSection() {
                     </a>
                 </div>
             </section>
+            </AuroraBackground>
         </>
     )
 }
