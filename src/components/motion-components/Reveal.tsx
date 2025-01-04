@@ -1,58 +1,39 @@
-import {useEffect, useRef} from 'react';
-import { motion } from 'framer-motion';
-import { useInView, useAnimation } from 'motion/react';
+import { useEffect, useRef } from "react";
+import { motion } from "framer-motion";
+import { useInView, useAnimation } from "framer-motion";
 
 interface RevealProps {
     children: JSX.Element;
     width?: "fit-content" | "100%";
     className?: string;
-}
+    delay?: number;
+    }
 
-export const Reveal = ({ children, width = "fit-content" , className}: RevealProps) => {
+    export const Reveal = ({ children, width = "fit-content", className, delay}: RevealProps) => {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true });
 
-    const mainControls = useAnimation();
-    const slideControls = useAnimation();
+    const animationControls = useAnimation();
 
     useEffect(() => {
         if (isInView) {
-            mainControls.start("visible");
-            slideControls.start("visible");
+        animationControls.start("visible");
         }
     }, [isInView]);
 
     return (
-        <div ref={ref} style={{ position: "relative", width, overflow:"hidden" }}  className={className}>
-            <motion.div
-                variants={{
-                    hidden: {opacity: 0, y: 75},
-                    visible: {opacity: 1, y: 0},
-                }}
-                initial="hidden"
-                animate={mainControls}
-                transition={{duration: 0.5, delay: 0.25}}
-            >
-                {children}
-            </motion.div>
-            <motion.div 
-                variants={{
-                    hidden: {left : 0},
-                    visible: {left: "100%"},
-                }}
-                initial="hidden"
-                animate={slideControls}
-                transition={{duration: 0.5, ease: "easeIn"}}
-                style={{
-                    position: "absolute",
-                    top: 4,
-                    bottom: 4,
-                    left: 0,
-                    right: 0,
-                    background: "#AA9D7D",
-                    zIndex: 20,
-                }}
-            />
+        <div ref={ref} style={{ width, overflow: "hidden" }} className={className}>
+        <motion.div
+            variants={{
+            hidden: { opacity: 0, filter: "blur(10px)" },
+            visible: { opacity: 1, filter: "blur(0px)" },
+            }}
+            initial="hidden"
+            animate={animationControls}
+            transition={{ duration: 0.5, delay: delay ? delay : 0.05 }}
+        >
+            {children}
+        </motion.div>
         </div>
-    )
-}
+    );
+};

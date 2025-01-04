@@ -3,38 +3,52 @@ import { Reveal } from "@/components/motion-components/Reveal";
 import profileAvatar from "@/assets/profile-avatar-v4.png";
 import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
 import { FlipWords } from "@/components/ui/flip-words";
-import { AuroraBackground } from "@/components/ui/aurora-background";
+// import { AuroraBackground } from "@/components/ui/aurora-background"; //Will implement a button for on/off alternative to spotlight
+import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
+import { Spotlight } from "@/components/ui/Spotlight";
 
 export default function HeroSection() {
     return (
-        <>
-            <AuroraBackground>
+        <>  
             <section className="flex items-center justify-center h-[30rem]">
-                {/* <Spotlight
-                    className="-top-40 left-0 md:left-[40rem] md:-top-20"
-                    fill="white"
-                /> */}
+                {/* Spotlight Effect */}
+                <div className="absolute h-full w-full overflow-hidden">
+                    <Spotlight
+                        className="-top-40 left-0 md:left-80 md:-top-10 -z-20"
+                        fill="gray"
+                    />
+
+                    <Spotlight
+                        className="top-40 left-0 md:left-full md:top-20 -z-20 h-[50vh]"
+                        fill="#aa9d7d"
+                    />
+
+                    <Spotlight
+                        className="top-40 left-0 md:left-0 md:top-36 -z-20 h-[80vh]"
+                        fill="gray"
+                    />
+                </div>
+
                 {/* Full Name */}
-                    <h1 className="absolute inset-x-0 flex justify-center text-[12rem] font-bold max-w-6xl mx-auto">
-                        <Reveal>
-                            <span>{userData.name}</span>                
-                        </Reveal>
-                    </h1>
+                <TextGenerateEffect words={userData.name} 
+                className="absolute inset-x-0 flex justify-center text-[12rem] font-bold max-w-6xl mx-auto"/>
 
                 {/* Avatar */}
-                <figure className="flex items-center justify-center h-full w-full z-50">
-                    <img 
-                        src={profileAvatar}
-                        alt="Kaizen Profile Picture"
-                        className="h-full w-auto rounded-2xl object-contain pointer-events-none"
-                    />
-                </figure>
+                <Reveal delay={1.5}>
+                    <figure className="flex items-center justify-center h-full w-full z-50">
+                        <img 
+                            src={profileAvatar}
+                            alt="Kaizen Profile Picture"
+                            className="h-full w-5/12 rounded-2xl object-contain pointer-events-none"
+                        />
+                    </figure>
+                </Reveal>
             </section>
 
             <section className="flex flex-col items-center justify-center h-full space-y-10 max-w-4xl py-5">
                 <div className="space-y-8 flex flex-col items-center">
                     {/* Job Role */}
-                    <Reveal>
+                    {/* <Reveal>
                         <h1 className="text-6xl text-center font-bold">
                             <span className=" text-[#AA9D7D]">
                                 {userData.header.subtitle_bold}
@@ -44,8 +58,10 @@ export default function HeroSection() {
                                 {userData.header.subtitle}
                             </span>
                         </h1>
-                    </Reveal>
-
+                    </Reveal> */}
+                    <TextGenerateEffect words={userData.header.subtitle_bold + " " + userData.header.subtitle}
+                    className="text-6xl text-center font-bold" keyword={true} substring={[0, 2]} additionalStyles="text-[#AA9D7D]"/>
+                    
                     <Reveal>
                         <h2 className="text-xl text-center">
                         A {userData.age}-year-old&nbsp;
@@ -103,7 +119,6 @@ export default function HeroSection() {
                     </a>
                 </div>
             </section>
-            </AuroraBackground>
         </>
     )
 }

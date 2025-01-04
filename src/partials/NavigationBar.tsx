@@ -2,81 +2,68 @@ import { Link, NavLink } from "react-router-dom";
 import { userData } from "@/constants/data";
 import { Reveal } from "@/components/motion-components/Reveal";
 import "@/index.css";
+import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 
 export default function NavigationBar() {
     return (
         <div className="max-w-6xl mx-auto px-4 py-10 md:py-13">
             <nav className="flex md:flex-row justify-between items-center">
                 <div className="flex flex-col">
-                    <Reveal>
-                        <Link to="/">
-                            <h1 className="font-semibold text-xl dark:text-gray-100">
-                                {userData.name}
-                            </h1>
-                            <p className="text-base font-light text-gray-500 dark:text-gray-300">
-                                {userData.designation}
-                            </p>
-                        </Link>
-                    </Reveal>
+                    <Link to="/">
+                        <TextGenerateEffect className="font-semibold text-xl dark:text-gray-100" words={userData.name} />
+                        <TextGenerateEffect className="text-base font-light text-gray-500 dark:text-gray-300" words={userData.designation} />
+                    </Link>
                 </div>
 
                 <div className="hidden md:block">
                 <ul className="flex text-base space-x-8">
                     <li>
-                        <Reveal>
-                            <NavLink 
-                                to="/about" 
-                                className={({ isActive }) =>
-                                    isActive
-                                        ? "text-white font-normal"
-                                        : "text-gray-600 dark:text-gray-300 font-normal hover:text-gray-800 dark:hover:text-gray-400"
-                                }
-                            >
-                                About
-                            </NavLink>
-                        </Reveal>
+                        <NavLink 
+                            to="/about" 
+                            className={({ isActive }) =>
+                                isActive
+                                    ? "text-white font-normal"
+                                    : "text-gray-600 dark:text-gray-300 font-normal hover:text-gray-800 dark:hover:text-gray-400"
+                            }
+                        >
+                            <TextGenerateEffect words="About" />
+                        </NavLink>
                     </li>
                     <li>
-                        <Reveal>
-                            <NavLink 
-                                to="/projects" 
-                                className={({ isActive }) =>
-                                    isActive
-                                        ? "text-white font-normal"
-                                        : "text-gray-600 dark:text-gray-300 font-normal hover:text-gray-800 dark:hover:text-gray-400"
-                                }
-                            >
-                                Projects
-                            </NavLink>
-                        </Reveal>
+                        <NavLink 
+                            to="/projects" 
+                            className={({ isActive }) =>
+                                isActive
+                                    ? "text-white font-normal"
+                                    : "text-gray-600 dark:text-gray-300 font-normal hover:text-gray-800 dark:hover:text-gray-400"
+                            }
+                        >
+                            <TextGenerateEffect words="Projects" />
+                        </NavLink>
                     </li>
                     <li>
-                        <Reveal>
-                            <NavLink 
-                                to="/experience" 
-                                className={({ isActive }) =>
-                                    isActive
-                                        ? "text-white font-normal"
-                                        : "text-gray-600 dark:text-gray-300 font-normal hover:text-gray-800 dark:hover:text-gray-400"
-                                }
-                            >
-                                Experience
-                            </NavLink>
-                        </Reveal>
+                        <NavLink 
+                            to="/experience" 
+                            className={({ isActive }) =>
+                                isActive
+                                    ? "text-white font-normal"
+                                    : "text-gray-600 dark:text-gray-300 font-normal hover:text-gray-800 dark:hover:text-gray-400"
+                            }
+                        >
+                            <TextGenerateEffect words="Experience" />
+                        </NavLink>
                     </li>
                     <li>
-                        <Reveal>
-                            <NavLink 
-                                to="/contact" 
-                                className={({ isActive }) =>
-                                    isActive
-                                        ? "text-white font-normal"
-                                        : "text-gray-600 dark:text-gray-300 font-normal hover:text-gray-800 dark:hover:text-gray-400"
-                                }
-                            >
-                                Contact
-                            </NavLink>
-                        </Reveal>
+                        <NavLink 
+                            to="/contact" 
+                            className={({ isActive }) =>
+                                isActive
+                                    ? "text-white font-normal"
+                                    : "text-gray-600 dark:text-gray-300 font-normal hover:text-gray-800 dark:hover:text-gray-400"
+                            }
+                        >
+                            <TextGenerateEffect words="Contact" />
+                        </NavLink>
                     </li>
                 </ul>
 
