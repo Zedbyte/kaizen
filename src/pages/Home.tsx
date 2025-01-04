@@ -7,14 +7,14 @@ import Grid from '@/components/custom/Grid';
 export default function Home() {
     return (
         <>
-            <div className='hero-block h-full relative border border-zinc-800'>
+            <div className='hero-block h-full relative'>
                 <Grid />
-                <div className="max-w-6xl mx-auto h-full flex flex-col items-center justify-center border-x border-zinc-800">
+                <div className="max-w-6xl mx-auto h-full flex flex-col items-center justify-center">
                     <HeroSection />
                 </div>
             </div>
-            <div className='tech-stack-block border-b border-zinc-800'>
-                <div className="max-w-6xl mx-auto h-full flex flex-col items-center justify-center border-x border-zinc-800">
+            <div className='tech-stack-block'>
+                <div className="max-w-6xl mx-auto h-full flex flex-col items-center justify-center">
                     <TechStackSection />
                 </div>
             </div>
@@ -24,7 +24,7 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className='cta-block bg-[#0A0A0A]'>
+            <div className='cta-block'>
                 <div className="max-w-6xl mx-auto px-4 pt-10 pb-10">
                     <CTASection />
                 </div>
