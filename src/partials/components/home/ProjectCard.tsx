@@ -1,5 +1,6 @@
 import { PinContainer } from "@/components/ui/3d-pin";
 import bentoBg from "@/assets/bento-bg.png";
+import { AnimatedTooltip } from "@/components/ui/animated-tooltip";
 
 export type ProjectCardProps = {
     project: {
@@ -9,7 +10,7 @@ export type ProjectCardProps = {
         description_truncated: string;
         src: string;
         link: string;
-        icon: string[];
+        icon: { id: number; src: string; name: string; }[];
     };
 };
 
@@ -38,16 +39,17 @@ export default function ProjectCard({ project  } : ProjectCardProps) {
 
                 <div className="flex items-center justify-between mt-7 mb-3">
                     <div className="flex items-center">
-                        {project.icon.map((icon, index) => (
+                        {/* {project.icon.map((icon, index) => (
                             <div 
                                 key={index}
-                                className="border border-white/[.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
+                                className="border border-white/[.2] rounded-full bg-gradient-to-r from-[#1e1e1e] to-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
                                 style={{
                                 transform: `translateX(-${5 * index + 2}px)`,
                                 }}>
                                 <img src={icon} alt={project.name} className="p-2"/>
                             </div>
-                        ))} 
+                        ))}  */}
+                        <AnimatedTooltip items={project.icon } />
                     </div>
 
                     <div className="flex justify-center items-center">
