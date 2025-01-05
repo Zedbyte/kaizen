@@ -12,19 +12,19 @@ export default function HeroSection() {
         <>  
             <section className="flex items-center justify-center h-[30rem]">
                 {/* Spotlight Effect */}
-                <div className="absolute h-full w-full overflow-hidden">
+                <div className="absolute h-full w-full overflow-hidden -z-20">
                     <Spotlight
-                        className="-top-40 left-0 md:left-80 md:-top-10 -z-20"
+                        className="-top-40 left-0 md:left-80 md:-top-10 "
                         fill="gray"
-                    />
+                    />  
 
                     <Spotlight
-                        className="top-40 left-0 md:left-full md:top-20 -z-20 h-[50vh]"
+                        className="top-40 left-0 md:left-full md:top-20  h-[50vh]"
                         fill="#aa9d7d"
                     />
 
                     <Spotlight
-                        className="top-40 left-0 md:left-0 md:top-36 -z-20 h-[80vh]"
+                        className="top-40 left-0 md:left-0 md:top-36  h-[80vh]"
                         fill="gray"
                     />
                 </div>
