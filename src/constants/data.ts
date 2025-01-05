@@ -63,7 +63,7 @@ export const projectData = [
         description_full: "A file repository system that allows users to securely store, access, and share files. It features a user-friendly interface, robust security measures, and seamless integration with third-party applications.",
         description_truncated: "A file repository system that allows users to securely store, access, and share files.",
         link: "https://draco.com",
-                icon: [
+        icon: [
             {   
                 id: 1,
                 src: 'src/assets/icons/dark/html5.svg',
@@ -95,7 +95,7 @@ export const projectData = [
         description_full: "A blogging platform that enables teams to work together seamlessly. It features real-time messaging, file sharing, task management, and video conferencing capabilities to enhance productivity and communication.",
         description_truncated: "A blogging platform that enables teams to work together seamlessly.",
         link: "https://nexus.com",
-                icon: [
+        icon: [
             {   
                 id: 1,
                 src: 'src/assets/icons/dark/html5.svg',

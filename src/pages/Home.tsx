@@ -46,7 +46,7 @@ export default function Home() {
                 </div>
             </div> */}
 
-            <div className='cta-block'>
+            <div className='cta-block pt-20 pb-20'>
                 <div className="max-w-6xl mx-auto px-4 pt-10 pb-10">
                     <CTASection />
                 </div>
