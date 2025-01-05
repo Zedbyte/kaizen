@@ -4,7 +4,7 @@ import '/public/css/project-link.css';
 
 export default function RecentProjectsSection() {
     return (
-        <section className="space-y-10 md:space-y-10">
+        <section className="space-y-10 md:space-y-3">
             {/* Recent Projects */}
             <div className="flex flex-col md:px-5">
                 <div className="text-8xl font-bold flex items-center gap-5">
@@ -17,7 +17,7 @@ export default function RecentProjectsSection() {
             </div>
 
             {/* Projects */}
-            <div className="flex flex-wrap items-center justify-around p-4 mt-10">
+            <div className="flex flex-wrap items-center justify-around p-4">
                 {projectData.map((item) => (
                     <ProjectCard key={item.id} project={item} />
                 ))}

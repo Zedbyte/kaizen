@@ -18,20 +18,20 @@ export default function ProjectCard({ project  } : ProjectCardProps) {
             <div key={project.id} className="flex items-center justify-center h-[32.5rem] w-[80vw] sm:w-96">
             <PinContainer title={project.name} href={project.link} className="space-y-10">
                 <figure className="relative flex items-center justify-center w-[20vw] h-[25vh] 
-                overflow-hidden">
-                    <div className="relative w-full h-full overflow-hidden rounded-3xl bg-zinc-500">
+                overflow-hidden rounded-lg">
+                    <div className="relative w-full h-full overflow-hidden rounded-lg bg-zinc-500">
                         <img src={bentoBg} alt="Card Background Image" />
                     </div>
                     <img src={project.src} alt={project.name} 
-                    className="z-10 absolute bottom-0"/>
+                    className="z-10 absolute -bottom-20"/>
                 </figure>
 
                 <figcaption>
-                    <h1 className="font-bold text-xl line-clamp-1">
+                    <h1 className="font-bold text-lg line-clamp-1">
                         {project.name} - {project.subtitle}
                     </h1>
 
-                    <p className="text-xl font-light line-clamp-2">
+                    <p className="text-md font-light line-clamp-2">
                         {project.description_truncated}
                     </p>
                 </figcaption>
