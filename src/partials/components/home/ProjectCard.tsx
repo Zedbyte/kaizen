@@ -52,7 +52,7 @@ export default function ProjectCard({ project  } : ProjectCardProps) {
                         <AnimatedTooltip items={project.icon } />
                     </div>
 
-                    <div className="flex justify-center items-center text-cyan-200 space-x-2">
+                    <div className="flex justify-center items-center text-[#aa9d7d] space-x-2">
                         <p className="flex lg:text-base md:text-xs text-sm font-light">
                             Check Live Site
                         </p>

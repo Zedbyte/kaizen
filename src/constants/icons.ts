@@ -19,7 +19,6 @@ export const upperMarquee: SvgIcon[] = [
     { name: 'CassandraDB', path: '/src/assets/icons/dark/cassandradb.svg' },
     { name: 'ChakraUI', path: '/src/assets/icons/dark/chakraui.svg' },
     { name: 'Chrome', path: '/src/assets/icons/dark/chrome.svg' },
-    { name: 'Clojure', path: '/src/assets/icons/dark/clojure.svg' },
     { name: 'Cloudflare', path: '/src/assets/icons/dark/cloudflare.svg' },
 ];
 

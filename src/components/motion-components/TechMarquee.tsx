@@ -38,7 +38,7 @@ export default function TechMarquee({images, from, to} : TechMarqueeProps) {
                 return (
                     <div key={index} className="flex flex-row-reverse pr-20 items-center">
                         <Reveal><h1 className="text-xl font-medium font-geist">{image.name}</h1></Reveal>
-                        <div className="p-2 bg-[#1e1e1e] border border-zinc-800 rounded-2xl mr-3">
+                        <div className="p-2 bg-gradient-to-br from-black via-zinc-950 to-[#1e1e1e] border border-white/[.05] rounded-2xl mr-3">
                             <img className="h-12" src={image.path} />
                         </div>
                     </div>
@@ -56,7 +56,7 @@ export default function TechMarquee({images, from, to} : TechMarqueeProps) {
                 return (
                     <div key={index} className="flex flex-row-reverse pr-20 items-center">
                         <Reveal><h1 className="text-xl font-medium font-geist">{image.name}</h1></Reveal>
-                        <div className="p-2 bg-[#1e1e1e] border border-zinc-800 rounded-2xl mr-3">
+                        <div className="p-2 bg-gradient-to-br from-black via-zinc-950 to-[#1e1e1e] border border-zinc-800 rounded-2xl mr-3">
                             <img className="h-12" src={image.path} />
                         </div>
                     </div>

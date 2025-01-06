@@ -1,4 +1,5 @@
 import HeroSection from '@/partials/home/HeroSection';
+import AboutSection from '@/partials/home/AboutSection';
 import TechStackSection from '@/partials/home/TechStackSection';
 import RecentProjectsSection from '@/partials/home/RecentProjectsSection';
 import CTASection from '@/partials/home/CTASection';
@@ -9,20 +10,32 @@ import { Icon } from "@/components/custom/Icon";
 export default function Home() {
     return (
         <>
+            {/* Hero Section */}
             <div className='hero-block h-full relative'>
                 <Grid />
                 <div className="max-w-6xl mx-auto h-full flex flex-col items-center justify-center">
                     <HeroSection />
                 </div>
             </div>
-            <div className='tech-stack-block'>
+
+            {/* About Section */}
+            <div className='about-block transition-colors duration-500 mt-40'>
+                <div className="max-w-6xl mx-auto px-4 py-10">
+                    <AboutSection />
+                </div>
+            </div>
+
+            {/* Tech Stack Section */}
+            <div className='tech-stack-block mt-40'>
                 <div className="max-w-6xl mx-auto h-full flex flex-col items-center justify-center">
                     <TechStackSection />
                 </div>
             </div>
-            <div className='recent-projects-block transition-colors duration-500 border-y border-zinc-800'>
+
+            {/* Recent Projects Section */}
+            <div className='recent-projects-block transition-colors duration-500 border-y border-zinc-800 mt-40'>
                 <BackgroundBeamsWithCollision>
-                    <div className="max-w-6xl mx-auto px-4 pt-10 border-x border-zinc-800 relative">
+                    <div className="max-w-6xl mx-auto px-4 py-10 border-x border-zinc-800 relative">
                         <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
                         <Icon className="absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-black" />
                         <Icon className="absolute h-6 w-6 -top-3 -right-3 dark:text-white text-black" />
@@ -46,6 +59,7 @@ export default function Home() {
                 </div>
             </div> */}
 
+            {/* Contact Section */}
             <div className='cta-block pt-20 pb-20'>
                 <div className="max-w-6xl mx-auto px-4 pt-10 pb-10">
                     <CTASection />

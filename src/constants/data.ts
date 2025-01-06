@@ -152,3 +152,30 @@ export const projectData = [
         src: "src/assets/projects/p4.svg"
     }
 ]
+
+export const experienceData = [
+    {
+        date: "2026",
+        title: "BS Information Technology",
+        subtitle: "Angeles University Foundation",
+        description: "Graduated with a degree in Information Technology major in Web and Mobile Technologies.",
+    },
+    {
+        date: "2023",
+        title: "Started Freelancing",
+        subtitle: "Commission-based",
+        description: "Started freelancing as a software developer taking projects from clients.",
+    },
+    {
+        date: "2022",
+        title: "TVL - ICT",
+        subtitle: "St. Augustine Academy of Pampanga",
+        description: "Graduated in SHS with a specialization in Information and Communications Technology (ICT) with High Honors.",
+    },
+    {
+        date: "2022",
+        title: "Started Coding",
+        subtitle: "Self-taught",
+        description: "Started learning how to code and build software.",
+    },
+]
