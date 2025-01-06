@@ -19,7 +19,7 @@ export default function AboutSection() {
 
             {/* Content */}
             <article className="grid grid-cols-1 md:grid-cols-12 px-5 gap-5">
-                <div className="col-span-12 md:col-span-7 space-y-5 bg-neutral-900 p-4 rounded-md border border-zinc-700">
+                <div className="col-span-12 md:col-span-7 space-y-5 bg-neutral-950 p-4 rounded-md border border-zinc-700">
                     <span className="flex items-center gap-2 text-zinc-400">
                         <svg
                             width="1em"
@@ -48,7 +48,7 @@ export default function AboutSection() {
                     </p>
                 </div>
 
-                <div className="col-span-12 md:col-span-5 row-span-2 bg-neutral-900 p-4 rounded-md border border-zinc-700">
+                <div className="col-span-12 md:col-span-5 row-span-2 bg-neutral-950 p-4 rounded-md border border-zinc-700">
                     <div className="flex justify-between">
                         <span className="flex items-center gap-2 text-zinc-400">
                             <svg
@@ -79,7 +79,7 @@ export default function AboutSection() {
                     <Timeline data={experienceData} />
                 </div>
 
-                <div className="col-span-12 md:col-span-7 bg-neutral-900 p-4 rounded-md border border-zinc-700">
+                <div className="col-span-12 md:col-span-7 bg-neutral-950 p-4 rounded-md border border-zinc-700">
                     <span className="flex items-center gap-2 text-zinc-400">
                         <svg
                             width="1em"
