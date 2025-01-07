@@ -1,6 +1,9 @@
 import Timeline from "@/components/custom/Timeline"
 import { experienceData } from "@/constants/data"
 import { Link } from "react-router-dom"
+import bentoAsset1 from "@/assets/bento/b4.svg"
+import bentoAsset2 from "@/assets/bento/b5.svg"
+import bentoGrid from "@/assets/bento/grid.svg"
 
 
 export default function AboutSection() {
@@ -19,8 +22,11 @@ export default function AboutSection() {
 
             {/* Content */}
             <article className="grid grid-cols-1 md:grid-cols-12 px-5 gap-5">
-                <div className="col-span-12 md:col-span-7 space-y-5 bg-neutral-950 p-4 rounded-md border border-zinc-700 group/bento">
-                    <span className="flex items-center gap-2 text-zinc-400 group-hover/bento:translate-x-2 transition duration-200">
+                {/* Introduction */}
+                <div className="col-span-12 md:col-span-7 space-y-5 
+                bg-neutral-950 p-4 rounded-md border border-zinc-700 
+                group/bento relative overflow-hidden">
+                    <span className="flex items-center gap-2 text-zinc-400 group-hover/bento:translate-x-2 transition-transform duration-200">
                         <svg
                             width="1em"
                             height="1em"
@@ -32,14 +38,23 @@ export default function AboutSection() {
                         <h1 className="font-bold">Introduction</h1>
                     </span>
 
+                    {/* Bento Grid */}
+                    <div className="absolute top-0 left-0 h-full opacity-30">
+                        <img src={bentoGrid} alt="Bento Background Image" className="object-cover object-center h-full w-full"/>
+                    </div>
+                    {/* Bento Asset */}
+                    <div className="absolute bottom-0 right-0 h-2/6 opacity-80">
+                        <img src={bentoAsset1} alt="Bento Background Image" className="object-cover object-center h-full w-full"/>
+                    </div>
+
                     <h1 className="dark:text-gray-100 text-md font-semibold tracking-wide leading-relaxed">
                         I am a full-stack engineer specializing in developing solutions with JavaScript, Python, 
                         PHP, and frameworks like .NET, Django, and React.
                     </h1>
 
-                    <p className="dark:text-gray-100 text-sm font-light tracking-wider">
+                    <p className="dark:text-gray-100 text-sm font-light tracking-wider leading-relaxed">
                         I focus on developing user-friendly, functional, and most importantly, profitable digital products inside the E-Commerce, 
-                        SaaS, Workflows, and Web3 industry.I've helped startups and MSMEs grow and streamline their processes through software solutions. 
+                        SaaS, Workflows, and Web3 industry. I've helped startups and MSMEs grow and streamline their processes through software solutions. 
                         I've also built a community of over 200,000 developers sharing knowledge and mentorship.
                         <br/>
                         <br/>
@@ -48,6 +63,7 @@ export default function AboutSection() {
                     </p>
                 </div>
 
+                {/* Experience */}
                 <div className="col-span-12 md:col-span-5 row-span-2 bg-neutral-950 p-4 rounded-md border border-zinc-700 group/bento">
                     <div className="flex justify-between">
                         <span className="flex items-center gap-2 text-zinc-400 group-hover/bento:translate-x-2 transition duration-200">
@@ -63,7 +79,7 @@ export default function AboutSection() {
                         </span>
 
                         <Link to="/about" className="text-xs">
-                            <span className="flex items-center gap-2 text-zinc-400">
+                            <span className="flex items-center gap-2 text-zinc-400 hover:underline">
                                 <h1 className="text-white">View All</h1>
                                 <svg
                                     width="1em"
@@ -79,8 +95,10 @@ export default function AboutSection() {
                     <Timeline data={experienceData} />
                 </div>
 
-                <div className="col-span-12 md:col-span-7 bg-neutral-950 p-4 rounded-md border border-zinc-700 group/bento">
-                    <span className="flex items-center gap-2 text-zinc-400 group-hover/bento:translate-x-2 transition duration-200">
+                {/* Services */}
+                <div className="col-span-12 md:col-span-7 bg-neutral-950 p-4 rounded-md border border-zinc-700 
+                group/bento relative overflow-hidden">
+                    <span className="flex items-center gap-2 text-zinc-400 group-hover/bento:translate-x-2 transition-transform duration-200">
                         <svg
                             width="1em"
                             height="1em"
@@ -91,6 +109,15 @@ export default function AboutSection() {
                         </svg>
                         <h1 className="font-bold">Services</h1>
                     </span>
+                    
+                    {/* Bento Grid */}
+                    <div className="absolute inset-0 h-full opacity-30">
+                        <img src={bentoGrid} alt="Bento Background Image" className="object-cover object-center h-full w-full"/>
+                    </div>
+                    {/* Bento Asset */}
+                    <div className="absolute  right-0 h-full opacity-80">
+                        <img src={bentoAsset2} alt="Bento Background Image" className="object-cover object-center h-full w-full"/>
+                    </div>
                 </div>
             </article>
         </section>
