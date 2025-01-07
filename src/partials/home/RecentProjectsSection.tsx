@@ -1,6 +1,6 @@
 import { projectData } from "@/constants/data";
 import ProjectCard from "../components/home/ProjectCard";
-import '/public/css/project-link.css';
+// import '/public/css/project-link.css';
 
 export default function RecentProjectsSection() {
     return (
