@@ -106,14 +106,15 @@ export default function TechStackSection() {
                             {[upperMarquee, middleMarquee, lowerMarquee].map((marquee, marqueeIndex) =>
                                 marquee.map((icon: any, index: number) => (
                                 <div key={`${marqueeIndex}-${index}`} className="col-span-2 flex">
-                                    <div className="flex flex-row-reverse justify-start items-center">
-                                    {/* Replace Reveal with your animation component */}
-                                    <h1 className="text-lg font-normal">{icon.name}</h1>
-                                    <div className="p-2 bg-gradient-to-br from-zinc-900 via-neutral-950 to-black border border-zinc-800 
-                                    rounded-2xl mr-3 shadow-lg hover:scale-110 transition-transform duration-200">
-                                        <img src={icon.path} alt={icon.name} className="h-12 w-full" />
-                                    </div>
-                                    </div>
+                                    <Reveal>
+                                        <div className="flex flex-row-reverse justify-start items-center">
+                                            <h1 className="text-lg font-normal">{icon.name}</h1>
+                                            <div className="p-2 bg-gradient-to-br from-zinc-900 via-neutral-950 to-black border border-zinc-800 
+                                            rounded-2xl mr-3 shadow-lg hover:scale-110 transition-transform duration-200">
+                                                <img src={icon.path} alt={icon.name} className="h-12 w-full" />
+                                            </div>
+                                        </div>
+                                    </Reveal>
                                 </div>
                                 ))
                             )}

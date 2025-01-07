@@ -22,7 +22,7 @@ interface RevealProps {
     }, [isInView]);
 
     return (
-        <div ref={ref} style={{ width, overflow: "hidden" }} className={className}>
+        <div ref={ref} style={{ width, }} className={className}>
         <motion.div
             variants={{
             hidden: { opacity: 0, filter: "blur(10px)" },

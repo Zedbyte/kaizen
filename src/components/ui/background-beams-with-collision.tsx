@@ -135,7 +135,7 @@ export const BackgroundBeamsWithCollision = ({
         repeatDelay?: number;
         };
     }
-    >(({ parentRef, containerRef, beamOptions = {} }, ref) => {
+    >(({ parentRef, containerRef, beamOptions = {} }, _ref) => {
     const beamRef = useRef<HTMLDivElement>(null);
     const [collision, setCollision] = useState<{
         detected: boolean;
