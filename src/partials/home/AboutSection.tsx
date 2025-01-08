@@ -1,9 +1,9 @@
 import Timeline from "@/components/custom/Timeline"
 import { experienceData } from "@/constants/data"
 import { Link } from "react-router-dom"
-import bentoAsset1 from "@/assets/bento/b4.svg"
-import bentoAsset2 from "@/assets/bento/b5.svg"
-import bentoGrid from "@/assets/bento/grid.svg"
+import bentoAsset1 from "/public/assets/bento/b4.svg"
+import bentoAsset2 from "/public/assets/bento/b5.svg"
+import bentoGrid from "/public/assets/bento/grid.svg"
 
 
 export default function AboutSection() {

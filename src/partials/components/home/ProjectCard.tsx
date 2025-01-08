@@ -1,5 +1,5 @@
 import { PinContainer } from "@/components/ui/3d-pin";
-import bentoBg from "@/assets/projects/bento-bg.png";
+import bentoBg from "/public/assets/projects/bento-bg.png";
 import { AnimatedTooltip } from "@/components/ui/animated-tooltip";
 
 export type ProjectCardProps = {

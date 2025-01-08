@@ -34,26 +34,26 @@ export const projectData = [
         icon: [
             {   
                 id: 1,
-                src: 'src/assets/icons/dark/php.svg',
+                src: '/assets/icons/dark/php.svg',
                 name: 'PHP',
             },
             {
                 id: 2,
-                src: 'src/assets/icons/dark/MySQL.svg',
+                src: '/assets/icons/dark/MySQL.svg',
                 name: 'MySQL',
             },
             {
                 id: 3,
-                src: 'src/assets/icons/dark/tailwindcss.svg',
+                src: '/assets/icons/dark/tailwindcss.svg',
                 name: 'TailwindCSS',
             },
             {
                 id: 4,
-                src: 'src/assets/icons/dark/twig.svg',
+                src: '/assets/icons/dark/twig.svg',
                 name: 'Twig',
             }
         ],
-        src: "src/assets/projects/p1.svg"
+        src: "/assets/projects/p1.svg"
     },
     {   
         id: 2,
@@ -66,26 +66,26 @@ export const projectData = [
         icon: [
             {   
                 id: 1,
-                src: 'src/assets/icons/dark/django.svg',
+                src: '/assets/icons/dark/django.svg',
                 name: 'Django',
             },
             {
                 id: 2,
-                src: 'src/assets/icons/dark/jinja.svg',
+                src: '/assets/icons/dark/jinja.svg',
                 name: 'Jinja2',
             },
             {
                 id: 3,
-                src: 'src/assets/icons/dark/bootstrap4.svg',
+                src: '/assets/icons/dark/bootstrap4.svg',
                 name: 'Bootstrap',
             },
             {
                 id: 4,
-                src: 'src/assets/icons/dark/firebase.svg',
+                src: '/assets/icons/dark/firebase.svg',
                 name: 'Firebase',
             }
         ],
-        src: "src/assets/projects/p2.svg"
+        src: "/assets/projects/p2.svg"
     },
     {
         id: 3,
@@ -98,26 +98,26 @@ export const projectData = [
         icon: [
             {   
                 id: 1,
-                src: 'src/assets/icons/dark/mysql.svg',
+                src: '/assets/icons/dark/mysql.svg',
                 name: 'MySQL',
             },
             {
                 id: 2,
-                src: 'src/assets/icons/dark/expressjs.svg',
+                src: '/assets/icons/dark/expressjs.svg',
                 name: 'Express JS',
             },
             {
                 id: 3,
-                src: 'src/assets/icons/dark/reactjs.svg',
+                src: '/assets/icons/dark/reactjs.svg',
                 name: 'ReactJS',
             },
             {
                 id: 4,
-                src: 'src/assets/icons/dark/nodejs.svg',
+                src: '/assets/icons/dark/nodejs.svg',
                 name: 'Node JS',
             }
         ],
-        src: "src/assets/projects/p3.svg"
+        src: "/assets/projects/p3.svg"
     },
     {
         id: 4,
@@ -130,26 +130,26 @@ export const projectData = [
                 icon: [
             {   
                 id: 1,
-                src: 'src/assets/icons/dark/csharp.svg',
+                src: '/assets/icons/dark/csharp.svg',
                 name: 'C#',
             },
             {
                 id: 2,
-                src: 'src/assets/icons/dark/dotnet.svg',
+                src: '/assets/icons/dark/dotnet.svg',
                 name: '.NET Core',
             },
             {
                 id: 3,
-                src: 'src/assets/icons/dark/winforms.png',
+                src: '/assets/icons/dark/winforms.png',
                 name: 'WinForms',
             },
             {
                 id: 4,
-                src: 'src/assets/icons/dark/vonage.svg',
+                src: '/assets/icons/dark/vonage.svg',
                 name: 'Vonage API',
             }
         ],
-        src: "src/assets/projects/p4.svg"
+        src: "/assets/projects/p4.svg"
     }
 ]
 
