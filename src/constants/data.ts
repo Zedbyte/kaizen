@@ -39,7 +39,7 @@ export const projectData = [
             },
             {
                 id: 2,
-                src: '/assets/icons/dark/MySQL.svg',
+                src: '/assets/icons/dark/mysql.svg',
                 name: 'MySQL',
             },
             {
