@@ -179,3 +179,34 @@ export const experienceData = [
         description: "Started learning how to code and build software.",
     },
 ]
+
+export const certificatesData = [
+    {
+        provider: "Microsoft",
+        name: "Microsoft Certified: Azure Fundamentals",
+        date: "June 29, 2023",
+        description: "Learn the fundamentals of Azure, cloud services, and how to manage them.",
+        path: "/assets/certificates/Microsoft-Azure-Fundamentals.png",
+    },
+    {
+        provider: "Harvard",
+        name: "CS50x: Introduction to Computer Science",
+        date: "2024",
+        description: "Learn the fundamentals of computer science and programming.",
+        path: "/assets/certificates/CS50x.png",
+    },
+    {
+        provider: "Udemy",
+        name: "JavaScript and PHP Programming",
+        date: "June 27, 2024",
+        description: "Learn how to build web applications using JavaScript and PHP.",
+        path: "/assets/certificates/UC-aa382a86-f133-4cf0-b9eb-fcf339097d9e.jpg",
+    },
+    {
+        provider: "Udemy",
+        name: "Python and Django Framework",
+        date: "June 27, 2024",
+        description: "Learn how to build web applications using Python and Django.",
+        path: "/assets/certificates/UC-aa382a86-f133-4cf0-b9eb-fcf339097d9e.jpg",
+    },
+];

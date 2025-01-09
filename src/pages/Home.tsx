@@ -1,5 +1,6 @@
 import HeroSection from '@/partials/home/HeroSection';
 import AboutSection from '@/partials/home/AboutSection';
+import CertificatesSection from '@/partials/home/CertificatesSection';
 import TechStackSection from '@/partials/home/TechStackSection';
 import RecentProjectsSection from '@/partials/home/RecentProjectsSection';
 import CTASection from '@/partials/home/CTASection';
@@ -24,6 +25,13 @@ export default function Home() {
                     <AboutSection />
                 </div>
             </div>
+            
+            {/* Certificates */}
+            <div className='certificates-block mt-40'>
+                <div className="max-w-6xl mx-auto h-full flex flex-col items-center justify-center">
+                    <CertificatesSection />
+                </div>
+            </div>
 
             {/* Tech Stack Section */}
             <div className='tech-stack-block mt-40'>
@@ -33,16 +41,16 @@ export default function Home() {
             </div>
 
             {/* Recent Projects Section */}
-            <div className='recent-projects-block transition-colors duration-500 border-y border-zinc-800 mt-40'>
-                <BackgroundBeamsWithCollision>
-                    <div className="max-w-6xl mx-auto px-4 py-10 border-x border-zinc-800 relative">
-                        <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
+            <div className='recent-projects-block transition-colors duration-500  border-zinc-800 mt-40'>
+                {/* <BackgroundBeamsWithCollision> */}
+                    <div className="max-w-6xl mx-auto px-4 py-10  border-zinc-800 relative">
+                        {/* <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
                         <Icon className="absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-black" />
                         <Icon className="absolute h-6 w-6 -top-3 -right-3 dark:text-white text-black" />
-                        <Icon className="absolute h-6 w-6 -bottom-3 -right-3 dark:text-white text-black" />
+                        <Icon className="absolute h-6 w-6 -bottom-3 -right-3 dark:text-white text-black" /> */}
                         <RecentProjectsSection />
                     </div>
-                </BackgroundBeamsWithCollision>
+                {/* </BackgroundBeamsWithCollision> */}
             </div>
             {/* <div className='recent-projects-block transition-colors duration-500 border-y border-zinc-800'>
                 <div className='max-w-6xl mx-auto relative'>
