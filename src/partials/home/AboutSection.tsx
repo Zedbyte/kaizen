@@ -39,11 +39,11 @@ export default function AboutSection() {
                     </span>
 
                     {/* Bento Grid */}
-                    <div className="absolute top-0 left-0 h-full opacity-30">
+                    <div className="absolute top-0 left-0 h-full opacity-30 pointer-events-none">
                         <img src={bentoGrid} alt="Bento Background Image" className="object-cover object-center h-full w-full"/>
                     </div>
                     {/* Bento Asset */}
-                    <div className="absolute bottom-0 right-0 h-2/6 opacity-80">
+                    <div className="absolute bottom-0 right-0 h-2/6 opacity-80 pointer-events-none">
                         <img src={bentoAsset1} alt="Bento Background Image" className="object-cover object-center h-full w-full"/>
                     </div>
 
@@ -111,11 +111,11 @@ export default function AboutSection() {
                     </span>
                     
                     {/* Bento Grid */}
-                    <div className="absolute inset-0 h-full opacity-30">
+                    <div className="absolute inset-0 h-full opacity-30 pointer-events-none">
                         <img src={bentoGrid} alt="Bento Background Image" className="object-cover object-center h-full w-full"/>
                     </div>
                     {/* Bento Asset */}
-                    <div className="absolute  right-0 h-full opacity-80">
+                    <div className="absolute  right-0 h-full opacity-80 pointer-events-none">
                         <img src={bentoAsset2} alt="Bento Background Image" className="object-cover object-center h-full w-full"/>
                     </div>
                 </div>
