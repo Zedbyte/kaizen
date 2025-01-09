@@ -7,12 +7,13 @@ import CTASection from '@/partials/home/CTASection';
 import Grid from '@/components/custom/Grid';
 import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
 import { Icon } from "@/components/custom/Icon";
+import TestimonialsSection from '@/partials/home/TestimonialsSection';
 
 export default function Home() {
     return (
         <>
             {/* Hero Section */}
-            <div className='hero-block h-full relative'>
+            <div className='hero-block h-full relative' id='home'>
                 <Grid />
                 <div className="max-w-6xl mx-auto h-full flex flex-col items-center justify-center">
                     <HeroSection />
@@ -20,28 +21,35 @@ export default function Home() {
             </div>
 
             {/* About Section */}
-            <div className='about-block transition-colors duration-500 mt-40'>
+            <div className='about-block transition-colors duration-500 mt-40' id='about'>
                 <div className="max-w-6xl mx-auto px-4 py-10">
                     <AboutSection />
-                </div>
-            </div>
-            
-            {/* Certificates */}
-            <div className='certificates-block mt-40'>
-                <div className="max-w-6xl mx-auto h-full flex flex-col items-center justify-center">
-                    <CertificatesSection />
                 </div>
             </div>
 
             {/* Tech Stack Section */}
             <div className='tech-stack-block mt-40'>
-                <div className="max-w-6xl mx-auto h-full flex flex-col items-center justify-center">
+                <div className="max-w-6xl mx-auto h-full flex flex-col items-center justify-center" id='skills'>
                     <TechStackSection />
+                </div>
+            </div>
+            
+            {/* Certificates */}
+            <div className='certificates-block mt-40'>
+                <div className="max-w-6xl mx-auto h-full flex flex-col items-center justify-center" id='certificates'>
+                    <CertificatesSection />
+                </div>
+            </div>
+
+            {/* Tech Stack Section */}
+            <div className='testimonials-block mt-40'>
+                <div className="max-w-6xl mx-auto h-full flex flex-col items-center justify-center" id='skills'>
+                    <TestimonialsSection />
                 </div>
             </div>
 
             {/* Recent Projects Section */}
-            <div className='recent-projects-block transition-colors duration-500  border-zinc-800 mt-40'>
+            <div className='recent-projects-block transition-colors duration-500  border-zinc-800 mt-40' id='projects'>
                 {/* <BackgroundBeamsWithCollision> */}
                     <div className="max-w-6xl mx-auto px-4 py-10  border-zinc-800 relative">
                         {/* <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
@@ -68,7 +76,7 @@ export default function Home() {
             </div> */}
 
             {/* Contact Section */}
-            <div className='cta-block pt-20 pb-20'>
+            <div className='cta-block pt-20 pb-20' id='contact'>
                 <div className="max-w-6xl mx-auto px-4 pt-10 pb-10">
                     <CTASection />
                 </div>

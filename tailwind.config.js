@@ -10,11 +10,11 @@ export default {
   ],
   theme: {
     extend: {
-      // START Spotlight Acaternity
       animation: {
         spotlight: "spotlight 2s ease .75s 1 forwards",
         shimmer: "shimmer 2s linear infinite",
         aurora: "aurora 60s linear infinite",
+        scroll: "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
       },
       keyframes: {
         spotlight: {
@@ -43,8 +43,12 @@ export default {
             backgroundPosition: "350% 50%, 350% 50%",
           },
         },
+        scroll: {
+          to: {
+            transform: "translate(calc(-50% - 0.5rem))",
+          },
+        },
       },
-      // END Spotlight Acaternity
     },
   },
   plugins: [addVariablesForColors],
