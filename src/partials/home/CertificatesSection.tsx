@@ -1,20 +1,11 @@
 import { LayoutGrid } from "@/components/ui/layout-grid"
 import { certificatesData } from "@/constants/data"
-import React from "react";
+import SectionTitle from "../components/home/SectionTitle";
 
 export default function CertificateFunction() { 
     return (
         <section className="space-y-10 md:space-y-3 w-full">
-            {/* Skills */}
-            <div className="flex flex-col md:px-5">
-                <div className="text-8xl font-bold flex items-center gap-5">
-                    <h1 className="text-nowrap">
-                        Recent
-                        <span className="text-[#aa9d7d]"> Certifications.</span>
-                    </h1>
-                    <div className="border-b border-zinc-800 w-full mt-6" />
-                </div>
-            </div>
+            <SectionTitle title="Certificates and Accreditations" subtitle="A Showcase of My Most Recent Certificates and Professional Accreditations"/>
 
             <div className="w-full h-screen py-10 md:px-5">
                 <LayoutGrid cards={cards} imgClassName=""/>

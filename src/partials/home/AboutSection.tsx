@@ -1,6 +1,7 @@
 import Timeline from "@/components/custom/Timeline"
 import { experienceData } from "@/constants/data"
 import { Link } from "react-router-dom"
+import SectionTitle from "../components/home/SectionTitle"
 import bentoAsset1 from "/public/assets/bento/b4.svg"
 import bentoAsset2 from "/public/assets/bento/b5.svg"
 import bentoGrid from "/public/assets/bento/grid.svg"
@@ -10,15 +11,7 @@ export default function AboutSection() {
     return (
         <section className="space-y-10 md:space-y-10">
             {/* About */}
-            <div className="flex flex-col md:px-5">
-                <div className="text-8xl font-bold flex items-center gap-5">
-                    <h1 className="text-nowrap">
-                        About
-                        <span className="text-[#aa9d7d]">.</span>
-                    </h1>
-                    <div className="border-b border-zinc-800 w-full mt-6" />
-                </div>
-            </div>
+            <SectionTitle title="About" subtitle="Discover My Professional Journey, Experiences, and Areas of Expertise"/>
 
             {/* Content */}
             <article className="grid grid-cols-1 md:grid-cols-12 px-5 gap-5">
@@ -107,7 +100,7 @@ export default function AboutSection() {
                         >
                             <path d="M0 1.75C0 .784.784 0 1.75 0h3.5C6.216 0 7 .784 7 1.75v3.5A1.75 1.75 0 0 1 5.25 7H4v4a1 1 0 0 0 1 1h4v-1.25C9 9.784 9.784 9 10.75 9h3.5c.966 0 1.75.784 1.75 1.75v3.5A1.75 1.75 0 0 1 14.25 16h-3.5A1.75 1.75 0 0 1 9 14.25v-.75H5A2.5 2.5 0 0 1 2.5 11V7h-.75A1.75 1.75 0 0 1 0 5.25zm1.75-.25a.25.25 0 0 0-.25.25v3.5c0 .138.112.25.25.25h3.5a.25.25 0 0 0 .25-.25v-3.5a.25.25 0 0 0-.25-.25zm9 9a.25.25 0 0 0-.25.25v3.5c0 .138.112.25.25.25h3.5a.25.25 0 0 0 .25-.25v-3.5a.25.25 0 0 0-.25-.25z" />
                         </svg>
-                        <h1 className="font-bold">Services</h1>
+                        <h1 className="font-bold">Recent Activity</h1>
                     </span>
                     
                     {/* Bento Grid */}

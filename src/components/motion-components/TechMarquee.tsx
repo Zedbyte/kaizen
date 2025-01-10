@@ -37,7 +37,7 @@ export default function TechMarquee({images, from, to} : TechMarqueeProps) {
                 {images.map((image, index) => {
                 return (
                     <div key={index} className="flex flex-row-reverse pr-20 items-center">
-                        <Reveal><h1 className="text-lg font-normal">{image.name}</h1></Reveal>
+                        <Reveal><h1 className="text-lg font-bold bg-gradient-to-b from-[#eeeeec] to-[#aba9a3] text-transparent bg-clip-text">{image.name}</h1></Reveal>
                         <div className="p-2 bg-gradient-to-br from-zinc-900 via-neutral-950 to-black border border-zinc-800 rounded-2xl mr-3
                         hover:scale-110 transition-transform duration-200">
                             <img className="h-12" src={image.path} />
@@ -56,7 +56,7 @@ export default function TechMarquee({images, from, to} : TechMarqueeProps) {
                 {images.map((image, index) => {
                 return (
                     <div key={index} className="flex flex-row-reverse pr-20 items-center">
-                        <Reveal><h1 className="text-lg font-normal">{image.name}</h1></Reveal>
+                        <Reveal><h1 className="text-lg font-bold bg-gradient-to-b from-[#eeeeec] to-[#aba9a3] text-transparent bg-clip-text">{image.name}</h1></Reveal>
                         <div className="p-2 bg-gradient-to-br from-black via-zinc-950 to-[#1e1e1e] border border-zinc-800 rounded-2xl mr-3
                         hover:scale-110 transition-transform duration-200">
                             <img className="h-12" src={image.path} />

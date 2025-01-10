@@ -5,22 +5,15 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 import ToggleButton from "../components/home/ToggleButton";
 import bentoGrid from "/public/assets/bento/grid.svg";
+import SectionTitle from "../components/home/SectionTitle";
 
 export default function TechStackSection() {
     const [isOn, setIsOn] = useState(false);
 
     return (
         <section className="space-y-10 md:space-y-3 w-full">
-            {/* Skills */}
-            <div className="flex flex-col md:px-5">
-                <div className="text-8xl font-bold flex items-center gap-5">
-                    <h1 className="text-nowrap">
-                        Skills
-                        <span className="text-[#aa9d7d]">.</span>
-                    </h1>
-                    <div className="border-b border-zinc-800 w-full mt-6" />
-                </div>
-            </div>
+            <SectionTitle title="Languages and Technologies" subtitle="Technologies I've Mastered and Worked With"/>
+
 
             <div className="w-full py-10 relative md:px-5">
 

@@ -1,18 +1,10 @@
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
+import SectionTitle from "../components/home/SectionTitle";
 
 export default function TestimonialsSection() {
     return (
         <section className="space-y-10 md:space-y-3 w-full">
-            {/* Recommendations */}
-            <div className="flex flex-col md:px-5">
-                <div className="text-8xl font-bold flex items-center gap-5">
-                    <h1 className="text-nowrap">
-                        Recommendations
-                        <span className="text-[#aa9d7d]">.</span>
-                    </h1>
-                    <div className="border-b border-zinc-800 w-full mt-6" />
-                </div>
-            </div>
+            <SectionTitle title="Testimonials and Recommendations" subtitle="Feedback and Recommendations from Colleagues and Industry Professionals"/>
 
             <div className="w-full py-10 relative md:px-5">
                 <InfiniteMovingCards
