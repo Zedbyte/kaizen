@@ -13,10 +13,10 @@ function RootLayout({ children } : RootLayoutProps) {
       <main className="dark:text-white w-full min-h-screen">
         <NavigationBar />
         <FloatingNav navItems={[
-          {name: 'About', link: '/about'},
-          {name: 'Projects', link: '/projects'},
-          {name: 'Experience', link: '/experience'},
-          {name: 'Contact', link: '/contact'},
+          {name: 'About', link: '#about'},
+          {name: 'Testimonials', link: '#testimonials'},
+          {name: 'Projects', link: '#projects'},
+          {name: 'Contact', link: '#contact'},
         ]}/>
         <div>{children}</div>
         <Footer />

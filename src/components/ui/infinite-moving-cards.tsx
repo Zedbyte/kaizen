@@ -14,6 +14,7 @@ export const InfiniteMovingCards = ({
         quote: string;
         name: string;
         title: string;
+        img: string;
     }[];
     direction?: "left" | "right";
     speed?: "fast" | "normal" | "slow";
@@ -73,7 +74,7 @@ export const InfiniteMovingCards = ({
         <div
         ref={containerRef}
         className={cn(
-            "scroller relative z-20  max-w-7xl overflow-hidden  [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
+            "scroller relative z-20  max-w-7xl overflow-hidden  [mask-image:linear-gradient(to_right,transparent,white_20%,white_95%,transparent)]",
             className
         )}
         >
@@ -100,13 +101,16 @@ export const InfiniteMovingCards = ({
                     {item.quote}
                 </span>
                 <div className="relative z-20 mt-6 flex flex-row items-center">
+                    <figure className="h-10 w-10 mr-3">
+                        <img src={item.img} alt="Profile" className="h-full w-full"/>
+                    </figure>
                     <span className="flex flex-col gap-1">
-                    <span className=" text-sm leading-[1.6] text-gray-400 font-normal">
-                        {item.name}
-                    </span>
-                    <span className=" text-sm leading-[1.6] text-gray-400 font-normal">
-                        {item.title}
-                    </span>
+                        <span className=" text-sm leading-[1.6] text-gray-400 font-normal">
+                            {item.name}
+                        </span>
+                        <span className=" text-sm leading-[1.6] text-gray-400 font-normal">
+                            {item.title}
+                        </span>
                     </span>
                 </div>
                 </blockquote>

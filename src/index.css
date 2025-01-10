@@ -35,6 +35,10 @@
     font-family: "Inter", serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .font-poppins {
     font-family: "Poppins", sans-serif;
 }

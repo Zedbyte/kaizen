@@ -5,8 +5,8 @@ import TechStackSection from '@/partials/home/TechStackSection';
 import RecentProjectsSection from '@/partials/home/RecentProjectsSection';
 import CTASection from '@/partials/home/CTASection';
 import Grid from '@/components/custom/Grid';
-import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
-import { Icon } from "@/components/custom/Icon";
+// import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
+// import { Icon } from "@/components/custom/Icon";
 import TestimonialsSection from '@/partials/home/TestimonialsSection';
 
 export default function Home() {
@@ -28,22 +28,22 @@ export default function Home() {
             </div>
 
             {/* Tech Stack Section */}
-            <div className='tech-stack-block mt-40'>
-                <div className="max-w-6xl mx-auto h-full flex flex-col items-center justify-center" id='skills'>
+            <div className='tech-stack-block mt-40' id='skills'>
+                <div className="max-w-6xl mx-auto h-full flex flex-col items-center justify-center">
                     <TechStackSection />
                 </div>
             </div>
             
             {/* Certificates */}
-            <div className='certificates-block mt-40'>
-                <div className="max-w-6xl mx-auto h-full flex flex-col items-center justify-center" id='certificates'>
+            <div className='certificates-block mt-40' id='certificates'>
+                <div className="max-w-6xl mx-auto h-full flex flex-col items-center justify-center">
                     <CertificatesSection />
                 </div>
             </div>
 
-            {/* Tech Stack Section */}
-            <div className='testimonials-block mt-40'>
-                <div className="max-w-6xl mx-auto h-full flex flex-col items-center justify-center" id='skills'>
+            {/* Testimonials Section */}
+            <div className='testimonials-block mt-40' id='testimonials'>
+                <div className="max-w-6xl mx-auto h-full flex flex-col items-center justify-center">
                     <TestimonialsSection />
                 </div>
             </div>

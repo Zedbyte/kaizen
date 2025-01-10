@@ -18,7 +18,7 @@ export default function NavigationBar() {
                 <div className="hidden md:block">
                 <ul className="flex text-base space-x-8">
                     <li>
-                        <NavLink 
+                        {/* <NavLink 
                             to="/about" 
                             className={({ isActive }) =>
                                 isActive
@@ -27,10 +27,28 @@ export default function NavigationBar() {
                             }
                         >
                             <TextGenerateEffect words="About" />
-                        </NavLink>
+                        </NavLink> */}
+                        <a href="#about" className="text-gray-600 dark:text-gray-300 font-normal hover:text-gray-800 dark:hover:text-gray-400">
+                            <TextGenerateEffect words="About" />
+                        </a>
                     </li>
                     <li>
-                        <NavLink 
+                        {/* <NavLink 
+                            to="/testimonials" 
+                            className={({ isActive }) =>
+                                isActive
+                                    ? "text-white font-normal"
+                                    : "text-gray-600 dark:text-gray-300 font-normal hover:text-gray-800 dark:hover:text-gray-400"
+                            }
+                        >
+                            <TextGenerateEffect words="Testimonials" />
+                        </NavLink> */}
+                        <a href="#testimonials" className="text-gray-600 dark:text-gray-300 font-normal hover:text-gray-800 dark:hover:text-gray-400">
+                            <TextGenerateEffect words="Testimonials" />
+                        </a>
+                    </li>
+                    <li>
+                        {/* <NavLink 
                             to="/projects" 
                             className={({ isActive }) =>
                                 isActive
@@ -39,22 +57,13 @@ export default function NavigationBar() {
                             }
                         >
                             <TextGenerateEffect words="Projects" />
-                        </NavLink>
+                        </NavLink> */}
+                        <a href="#projects" className="text-gray-600 dark:text-gray-300 font-normal hover:text-gray-800 dark:hover:text-gray-400">
+                            <TextGenerateEffect words="Projects" />
+                        </a>
                     </li>
                     <li>
-                        <NavLink 
-                            to="/experience" 
-                            className={({ isActive }) =>
-                                isActive
-                                    ? "text-white font-normal"
-                                    : "text-gray-600 dark:text-gray-300 font-normal hover:text-gray-800 dark:hover:text-gray-400"
-                            }
-                        >
-                            <TextGenerateEffect words="Experience" />
-                        </NavLink>
-                    </li>
-                    <li>
-                        <NavLink 
+                        {/* <NavLink 
                             to="/contact" 
                             className={({ isActive }) =>
                                 isActive
@@ -63,7 +72,10 @@ export default function NavigationBar() {
                             }
                         >
                             <TextGenerateEffect words="Contact" />
-                        </NavLink>
+                        </NavLink> */}
+                        <a href="#contact" className="text-gray-600 dark:text-gray-300 font-normal hover:text-gray-800 dark:hover:text-gray-400">
+                            <TextGenerateEffect words="Contact" />
+                        </a>
                     </li>
                 </ul>
 
