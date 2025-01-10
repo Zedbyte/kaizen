@@ -29,21 +29,21 @@ export default function Home() {
 
             {/* Tech Stack Section */}
             <div className='tech-stack-block mt-40' id='skills'>
-                <div className="max-w-6xl mx-auto h-full flex flex-col items-center justify-center">
+                <div className="max-w-6xl mx-auto py-10 h-full flex flex-col items-center justify-center">
                     <TechStackSection />
                 </div>
             </div>
             
             {/* Certificates */}
             <div className='certificates-block mt-40' id='certificates'>
-                <div className="max-w-6xl mx-auto h-full flex flex-col items-center justify-center">
+                <div className="max-w-6xl mx-auto py-10 h-full flex flex-col items-center justify-center">
                     <CertificatesSection />
                 </div>
             </div>
 
             {/* Testimonials Section */}
             <div className='testimonials-block mt-40' id='testimonials'>
-                <div className="max-w-6xl mx-auto h-full flex flex-col items-center justify-center">
+                <div className="max-w-6xl mx-auto py-10 h-full flex flex-col items-center justify-center">
                     <TestimonialsSection />
                 </div>
             </div>
