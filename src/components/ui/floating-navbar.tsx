@@ -6,7 +6,7 @@ import {
     useMotionValueEvent,
     } from "framer-motion";
     import { cn } from "@/lib/utils";
-    import { Link } from "react-router-dom";
+    // import { Link } from "react-router-dom";
 
     export const FloatingNav = ({
     navItems,

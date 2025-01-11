@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link, } from "react-router-dom";
 import { userData } from "@/constants/data";
 import { Reveal } from "@/components/motion-components/Reveal";
 import "@/index.css";
