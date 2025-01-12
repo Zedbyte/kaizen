@@ -5,7 +5,7 @@ import SectionTitle from "../components/home/SectionTitle"
 import bentoAsset1 from "/public/assets/bento/b4.svg"
 import bentoAsset2 from "/public/assets/bento/b5.svg"
 import bentoGrid from "/public/assets/bento/grid.svg"
-
+import GitHubActivityCalendar from "../components/home/GithubCalendar";
 
 export default function AboutSection() {
     return (
@@ -111,6 +111,11 @@ export default function AboutSection() {
                     <div className="absolute  right-0 h-full opacity-80 pointer-events-none">
                         <img src={bentoAsset2} alt="Bento Background Image" className="object-cover object-center h-full w-full"/>
                     </div>
+                </div>
+
+                {/* GitHub Activity */}
+                <div className="col-span-12 bg-neutral-950 p-4 rounded-md border border-zinc-700 group/bento">
+                    <GitHubActivityCalendar />
                 </div>
             </article>
         </section>
