@@ -49,7 +49,7 @@ export type GithubEventType = {
 
 
 export default async function getGithubRecentCommit() {
-    const data = await fetch('https://api.github.com/users/hyoaru/events')
+    const data = await fetch('https://api.github.com/users/Zedbyte/events')
         .then((res) => res.json() as Promise<GithubEventType>)
         .then((events) => events.filter((event) => event.type === 'PushEvent')?.[0])
         .then((recentPushEvent) => {

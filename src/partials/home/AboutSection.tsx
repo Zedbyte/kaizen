@@ -104,7 +104,7 @@ export default function AboutSection() {
                     </span>
                     
                     {/* Bento Grid */}
-                    <div className="absolute inset-0 h-full opacity-30 pointer-events-none">
+                    <div className="absolute inset-0 h-full opacity-25 pointer-events-none">
                         <img src={bentoGrid} alt="Bento Background Image" className="object-cover object-center h-full w-full"/>
                     </div>
                     {/* Bento Asset */}
