@@ -8,11 +8,10 @@ import bentoGrid from "/assets/bento/grid.svg"
 import GitHubActivityCalendar from "../../components/custom/GithubCalendar";
 import getGithubRecentCommit, { GithubRecentCommitType } from '@/services/getRecentCommit';
 import { useEffect, useState } from "react"
-import { div } from "framer-motion/client"
 
 export default function AboutSection() {
     const [recentCommit, setRecentCommit] = useState<GithubRecentCommitType | null>(null);
-    const [error, setError] = useState<string | null>(null);
+    const [_error, setError] = useState<string | null>(null);
 
     useEffect(() => {
         const fetchData = async () => {
