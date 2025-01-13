@@ -6,8 +6,28 @@ import bentoAsset1 from "/assets/bento/b4.svg"
 import bentoAsset2 from "/assets/bento/b5.svg"
 import bentoGrid from "/assets/bento/grid.svg"
 import GitHubActivityCalendar from "../../components/custom/GithubCalendar";
+import getGithubRecentCommit, { GithubRecentCommitType } from '@/services/getRecentCommit';
+import { useEffect, useState } from "react"
+import { div } from "framer-motion/client"
 
 export default function AboutSection() {
+    const [recentCommit, setRecentCommit] = useState<GithubRecentCommitType | null>(null);
+    const [error, setError] = useState<string | null>(null);
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const data = await getGithubRecentCommit();
+                setRecentCommit(data);
+            } catch (err) {
+                setError('Failed to fetch recent commit data');
+                console.error(err);
+            }
+        };
+    
+        fetchData();
+    }, []);
+
     return (
         <section className="space-y-10 md:space-y-10">
             {/* About */}
@@ -90,7 +110,7 @@ export default function AboutSection() {
 
                 {/* Services */}
                 <div className="col-span-12 md:col-span-7 bg-neutral-950 p-4 rounded-md border border-zinc-700 
-                group/bento relative overflow-hidden">
+                group/bento relative overflow-hidden flex flex-col">
                     <span className="flex items-center gap-2 text-zinc-400 group-hover/bento:translate-x-2 transition-transform duration-200">
                         <svg
                             width="1em"
@@ -111,10 +131,60 @@ export default function AboutSection() {
                     <div className="absolute  right-0 h-full opacity-80 pointer-events-none">
                         <img src={bentoAsset2} alt="Bento Background Image" className="object-cover object-center h-full w-full"/>
                     </div>
+
+                    <div className="h-full flex items-center flex-grow">
+                        {recentCommit ? (
+                            <div className="flex items-center space-x-5">
+                                <figure className="p-2 bg-neutral-900 rounded-md">
+                                    <svg
+                                        width="5em"
+                                        height="5em"
+                                        fill="currentColor"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                                    </svg>
+                                </figure>
+
+                                <span>
+                                    <h3 className="text-xs font-semibold text-gray-500">Github ･&nbsp; 
+                                        {new Date(recentCommit.created_at).getFullYear()}-
+                                        {new Date(recentCommit.created_at).getMonth() + 1}-
+                                        {new Date(recentCommit.created_at).getDate()}
+                                    </h3>
+
+                                    <h1 className="text-lg font-bold">
+                                        {recentCommit.commit_message}
+                                    </h1>
+
+                                    <h2 className="text-sm font-semibold text-gray-500">
+                                        {recentCommit.repository_name}
+                                    </h2>
+                                </span>
+                            </div>
+                        ) : (
+                            <p>Loading...</p>
+                        )}
+                    </div>
                 </div>
 
                 {/* GitHub Activity */}
-                <div className="col-span-12 bg-neutral-950 p-4 rounded-md border border-zinc-700 group/bento">
+                <div className="col-span-12 bg-neutral-950 p-4 rounded-md space-y-5 border border-zinc-700 group/bento">
+                    <span className="flex items-center gap-2 text-zinc-400 group-hover/bento:translate-x-2 transition-transform duration-200">
+                        <svg
+                            width="1em"
+                            height="1em"
+                            fill="currentColor"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                            fillRule="evenodd"
+                            d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2"
+                            />
+                        </svg>
+                        <h1 className="font-bold">Activity Calendar</h1>
+                    </span>
+
                     <GitHubActivityCalendar />
                 </div>
             </article>
