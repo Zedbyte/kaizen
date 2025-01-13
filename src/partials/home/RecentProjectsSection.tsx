@@ -1,6 +1,6 @@
 import { projectData } from "@/constants/data";
-import ProjectCard from "../components/home/ProjectCard";
-import SectionTitle from "../components/home/SectionTitle";
+import ProjectCard from "../../components/custom/ProjectCard";
+import SectionTitle from "../../components/custom/SectionTitle";
 // import '/public/css/project-link.css';
 
 export default function RecentProjectsSection() {

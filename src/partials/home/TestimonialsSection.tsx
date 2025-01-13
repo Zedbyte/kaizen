@@ -1,5 +1,5 @@
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
-import SectionTitle from "../components/home/SectionTitle";
+import SectionTitle from "../../components/custom/SectionTitle";
 
 export default function TestimonialsSection() {
     return (

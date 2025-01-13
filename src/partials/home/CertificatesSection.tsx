@@ -1,6 +1,6 @@
 import { LayoutGrid } from "@/components/ui/layout-grid"
 import { certificatesData } from "@/constants/data"
-import SectionTitle from "../components/home/SectionTitle";
+import SectionTitle from "../../components/custom/SectionTitle";
 
 export default function CertificateFunction() { 
     return (

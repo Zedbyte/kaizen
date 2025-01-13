@@ -1,11 +1,11 @@
 import Timeline from "@/components/custom/Timeline"
 import { experienceData } from "@/constants/data"
 import { Link } from "react-router-dom"
-import SectionTitle from "../components/home/SectionTitle"
+import SectionTitle from "../../components/custom/SectionTitle"
 import bentoAsset1 from "/public/assets/bento/b4.svg"
 import bentoAsset2 from "/public/assets/bento/b5.svg"
 import bentoGrid from "/public/assets/bento/grid.svg"
-import GitHubActivityCalendar from "../components/home/GithubCalendar";
+import GitHubActivityCalendar from "../../components/custom/GithubCalendar";
 
 export default function AboutSection() {
     return (

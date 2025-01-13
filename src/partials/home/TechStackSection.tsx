@@ -3,9 +3,9 @@ import TechMarquee from "@/components/motion-components/TechMarquee"
 import { upperMarquee, middleMarquee, lowerMarquee } from '@/constants/icons';
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
-import ToggleButton from "../components/home/ToggleButton";
+import ToggleButton from "../../components/custom/ToggleButton";
 import bentoGrid from "/public/assets/bento/grid.svg";
-import SectionTitle from "../components/home/SectionTitle";
+import SectionTitle from "../../components/custom/SectionTitle";
 
 export default function TechStackSection() {
     const [isOn, setIsOn] = useState(false);
