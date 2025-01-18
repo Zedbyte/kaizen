@@ -1,5 +1,5 @@
-import NavigationBar from '@/partials/NavigationBar'
-import Footer from '@/partials/Footer';
+import NavigationBar from '@/partials/common/NavigationBar'
+import Footer from '@/partials/common/Footer';
 import { FloatingNav } from '@/components/ui/floating-navbar';
 
 interface RootLayoutProps {
