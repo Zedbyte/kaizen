@@ -22,6 +22,11 @@ export const userData = {
     }
 }
 
+export const aboutData = {
+    header: 'I am a full-stack engineer specializing in developing solutions with JavaScript, Python, PHP, and frameworks like .NET, Django, and React.',
+    introduction: "I focus on developing user-friendly, functional, and most importantly, profitable digital products inside the E-Commerce, SaaS, Workflows, and Web3 industry. I've helped startups and MSMEs grow and streamline their processes through software solutions. I've also built a community of over 200,000 developers sharing knowledge and mentorship. "
+}
+
 export const projectData = [
     {   
         id: 1,
