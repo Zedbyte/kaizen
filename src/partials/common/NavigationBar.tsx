@@ -16,69 +16,38 @@ export default function NavigationBar() {
                 </div>
 
                 <div className="hidden md:block">
-                <ul className="flex text-base space-x-8">
-                    <li>
-                        {/* <NavLink 
-                            to="/about" 
-                            className={({ isActive }) =>
-                                isActive
-                                    ? "text-white font-normal"
-                                    : "text-gray-600 dark:text-gray-300 font-normal hover:text-gray-800 dark:hover:text-gray-400"
-                            }
-                        >
-                            <TextGenerateEffect words="About" />
-                        </NavLink> */}
-                        <a href="#about" className="text-gray-600 dark:text-gray-300 font-normal hover:text-gray-800 dark:hover:text-gray-400">
-                            <TextGenerateEffect words="About" />
-                        </a>
-                    </li>
-                    <li>
-                        {/* <NavLink 
-                            to="/testimonials" 
-                            className={({ isActive }) =>
-                                isActive
-                                    ? "text-white font-normal"
-                                    : "text-gray-600 dark:text-gray-300 font-normal hover:text-gray-800 dark:hover:text-gray-400"
-                            }
-                        >
-                            <TextGenerateEffect words="Testimonials" />
-                        </NavLink> */}
-                        <a href="#testimonials" className="text-gray-600 dark:text-gray-300 font-normal hover:text-gray-800 dark:hover:text-gray-400">
-                            <TextGenerateEffect words="Testimonials" />
-                        </a>
-                    </li>
-                    <li>
-                        {/* <NavLink 
-                            to="/projects" 
-                            className={({ isActive }) =>
-                                isActive
-                                    ? "text-white font-normal"
-                                    : "text-gray-600 dark:text-gray-300 font-normal hover:text-gray-800 dark:hover:text-gray-400"
-                            }
-                        >
-                            <TextGenerateEffect words="Projects" />
-                        </NavLink> */}
-                        <a href="#projects" className="text-gray-600 dark:text-gray-300 font-normal hover:text-gray-800 dark:hover:text-gray-400">
-                            <TextGenerateEffect words="Projects" />
-                        </a>
-                    </li>
-                    <li>
-                        {/* <NavLink 
-                            to="/contact" 
-                            className={({ isActive }) =>
-                                isActive
-                                    ? "text-white font-normal"
-                                    : "text-gray-600 dark:text-gray-300 font-normal hover:text-gray-800 dark:hover:text-gray-400"
-                            }
-                        >
-                            <TextGenerateEffect words="Contact" />
-                        </NavLink> */}
-                        <a href="#contact" className="text-gray-600 dark:text-gray-300 font-normal hover:text-gray-800 dark:hover:text-gray-400">
-                            <TextGenerateEffect words="Contact" />
-                        </a>
-                    </li>
-                </ul>
-
+                    <ul className="flex text-base space-x-8">
+                        <li>
+                            {/* <NavLink 
+                                to="/about" 
+                                className={({ isActive }) =>
+                                    isActive
+                                        ? "text-white font-normal"
+                                        : "text-gray-600 dark:text-gray-300 font-normal hover:text-gray-800 dark:hover:text-gray-400"
+                                }
+                            >
+                                <TextGenerateEffect words="About" />
+                            </NavLink> */}
+                            <a href="#about" className="text-gray-600 dark:text-gray-300 font-normal hover:text-gray-800 dark:hover:text-gray-400">
+                                <TextGenerateEffect words="About" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#testimonials" className="text-gray-600 dark:text-gray-300 font-normal hover:text-gray-800 dark:hover:text-gray-400">
+                                <TextGenerateEffect words="Testimonials" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#projects" className="text-gray-600 dark:text-gray-300 font-normal hover:text-gray-800 dark:hover:text-gray-400">
+                                <TextGenerateEffect words="Projects" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contact" className="text-gray-600 dark:text-gray-300 font-normal hover:text-gray-800 dark:hover:text-gray-400">
+                                <TextGenerateEffect words="Contact" />
+                            </a>
+                        </li>
+                    </ul>
                 </div>
 
                 <div className="flex">
