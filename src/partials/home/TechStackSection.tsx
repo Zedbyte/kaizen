@@ -1,5 +1,5 @@
-import { Reveal } from "@/components/motion-components/Reveal";
-import TechMarquee from "@/components/motion-components/TechMarquee"
+import { Reveal } from "@/components/motion/Reveal";
+import TechMarquee from "@/components/motion/TechMarquee"
 import { upperMarquee, middleMarquee, lowerMarquee } from '@/constants/icons';
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";

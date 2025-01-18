@@ -1,6 +1,6 @@
 import { Link, } from "react-router-dom";
 import { userData } from "@/constants/data";
-import { Reveal } from "@/components/motion-components/Reveal";
+import { Reveal } from "@/components/motion/Reveal";
 import "@/index.css";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 

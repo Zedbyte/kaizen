@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Reveal } from "@/components/motion-components/Reveal";
+import { Reveal } from "@/components/motion/Reveal";
 
 // Type definition for each icon's name and path
 interface SvgIcon {

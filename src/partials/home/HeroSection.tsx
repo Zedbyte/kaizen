@@ -1,5 +1,5 @@
 import { userData } from "@/constants/data";
-import { Reveal } from "@/components/motion-components/Reveal";
+import { Reveal } from "@/components/motion/Reveal";
 import profileAvatar from "@/assets/profile-avatar-v4.png";
 import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
 import { FlipWords } from "@/components/ui/flip-words";
