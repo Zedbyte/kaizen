@@ -6,7 +6,7 @@ export default function Footer() {
         <footer className="relative">
             <FooterGrid />
             <div className="max-w-6xl mx-auto px-4 py-8 border-t border-border">
-                <p className="text-sm text-foreground/70">© {new Date().getFullYear()} Mark Santos. All rights reserved.</p>
+                <p className="text-sm text-secondary-light/70 dark:text-secondary-dark/70">© {new Date().getFullYear()} Mark Santos. All rights reserved.</p>
             </div>
         </footer>
     )
