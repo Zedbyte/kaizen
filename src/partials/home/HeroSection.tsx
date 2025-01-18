@@ -31,7 +31,7 @@ export default function HeroSection() {
 
                 {/* Full Name */}
                 <TextGenerateEffect words={userData.name} 
-                className="absolute inset-x-0 flex justify-center text-[12rem] font-bold max-w-6xl mx-auto"/>
+                className="absolute inset-x-0 flex justify-center text-[12rem] font-bold max-w-6xl mx-auto text-primary-light dark:text-primary-dark"/>
 
                 {/* Avatar */}
                 <Reveal delay={1.5}>
@@ -60,13 +60,14 @@ export default function HeroSection() {
                         </h1>
                     </Reveal> */}
                     <TextGenerateEffect words={userData.header.subtitle_bold + " " + userData.header.subtitle}
-                    className="text-6xl text-center font-bold" keyword={true} substring={[0, 2]} additionalStyles="text-[#AA9D7D]"/>
+                    className="text-6xl text-center font-bold text-primary-light dark:text-primary-dark" 
+                    keyword={true} substring={[0, 2]} additionalStyles="text-highlight"/>
                     
                     <Reveal>
-                        <h2 className="text-xl text-center">
+                        <h2 className="text-xl text-center text-primary-light dark:text-primary-dark">
                         A {userData.age}-year-old&nbsp;
                         <span>
-                            <FlipWords className="font-bold text-[#AA9D7D]" words={userData.header.role} />
+                            <FlipWords className="font-bold text-highlight" words={userData.header.role} />
                         </span>
                         &nbsp;<br />based in {userData.province}, {userData.country}.</h2>
                     </Reveal>
@@ -77,11 +78,11 @@ export default function HeroSection() {
                 <div className="flex w-6/12 space-x-9">
                     {/* Schedule a Call Button  */}
                     <a href="https://calendly.com/kaizxn/consultation" target="_blank" rel="noopener noreferrer"
-                    className="bg-[#1e1e1e] text-white font-medium w-full py-2 rounded-full 
+                    className="bg-[#1e1e1e] text-primary-light dark:text-primary-dark font-medium w-full py-2 rounded-full 
                     hover:bg-[#2b2b2b] border border-neutral-700 shadow-lg
                     transition duration-300 flex items-center justify-center">
                         <span className="flex items-center justify-center space-x-2">
-                            <p>Schedule A Call</p>
+                            <span>Schedule A Call</span>
                             <svg
                                 width="1em"
                                 height="1em"
@@ -101,7 +102,7 @@ export default function HeroSection() {
                         <HoverBorderGradient
                             containerClassName="rounded-full"
                             as="button"
-                            className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2 w-full"
+                            className="dark:bg-black bg-white text-primary-light dark:text-primary-dark flex items-center space-x-2 w-full"
                         >
                             <p>View Resume</p>
                             <svg

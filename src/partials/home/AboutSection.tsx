@@ -59,12 +59,12 @@ export default function AboutSection() {
                         <img src={bentoAsset1} alt="Bento Background Image" className="object-cover object-center h-full w-full"/>
                     </div>
 
-                    <h1 className="dark:text-gray-100 text-md font-semibold tracking-wide leading-relaxed">
+                    <h1 className="text-secondary-light dark:text-secondary-dark text-md font-semibold tracking-wide leading-relaxed">
                         I am a full-stack engineer specializing in developing solutions with JavaScript, Python, 
                         PHP, and frameworks like .NET, Django, and React.
                     </h1>
 
-                    <p className="dark:text-gray-100 text-sm font-light tracking-wider leading-relaxed">
+                    <p className="text-secondary-light dark:text-secondary-dark text-sm font-light tracking-wider leading-relaxed">
                         I focus on developing user-friendly, functional, and most importantly, profitable digital products inside the E-Commerce, 
                         SaaS, Workflows, and Web3 industry. I've helped startups and MSMEs grow and streamline their processes through software solutions. 
                         I've also built a community of over 200,000 developers sharing knowledge and mentorship.

@@ -4,12 +4,24 @@ const {
 
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: "class",
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
+      colors: {
+        primary: {
+          light: "#000",
+          dark: "#fff",
+        },
+        secondary: {
+          light: "#111827",
+          dark: "#f3f4f6",
+        },
+        highlight: "#AA9D7D",
+      },
       animation: {
         spotlight: "spotlight 2s ease .75s 1 forwards",
         shimmer: "shimmer 2s linear infinite",
