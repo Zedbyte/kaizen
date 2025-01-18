@@ -52,7 +52,7 @@ export default function CTASection() {
 
         {/* Content */}
         <div className="relative z-10 text-center flex flex-col gap-5">
-            <h2 className="text-7xl font-semibold">Like What You're Seeing?</h2>
+            <h2 className="text-7xl font-semibold text-secondary-light dark:text-secondary-dark">Like What You're Seeing?</h2>
             <p className="text-3xl dark:text-gray-400 font-medium">
                 Let's work together to create something <FlipWords words={userData.cta.something} />
             </p>

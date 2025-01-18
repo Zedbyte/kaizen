@@ -28,11 +28,11 @@ export default function ProjectCard({ project  } : ProjectCardProps) {
                 </figure>
 
                 <figcaption>
-                    <h1 className="font-bold text-lg line-clamp-1">
+                    <h1 className="font-bold text-lg line-clamp-1 text-secondary-light dark:text-secondary-dark">
                         {project.name} - {project.subtitle}
                     </h1>
 
-                    <p className="text-md font-light line-clamp-2">
+                    <p className="text-md font-light line-clamp-2 text-secondary-light dark:text-secondary-dark">
                         {project.description_truncated}
                     </p>
                 </figcaption>
@@ -53,7 +53,7 @@ export default function ProjectCard({ project  } : ProjectCardProps) {
                     </div>
 
                     <div className="flex justify-center items-center space-x-2">
-                        <p className="flex lg:text-base md:text-xs text-sm font-light">
+                        <p className="flex lg:text-base md:text-xs text-sm font-light text-secondary-light dark:text-secondary-dark">
                             Check Live Site
                         </p>
 
