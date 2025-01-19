@@ -3,8 +3,31 @@ import { userData } from "@/constants/data";
 import { Reveal } from "@/components/motion/Reveal";
 import "@/index.css";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
+import { useEffect, useState } from "react";
 
 export default function NavigationBar() {
+
+    const [isDarkMode, setIsDarkMode] = useState(
+        () => localStorage.getItem("theme") === "dark"
+    );
+
+    useEffect(() => {
+        const root = document.documentElement;
+        if (isDarkMode) {
+            root.classList.add("dark");
+            root.classList.remove("light");
+            localStorage.setItem("theme", "dark");
+        } else {
+            root.classList.remove("dark");
+            root.classList.add("light");
+            localStorage.setItem("theme", "light");
+        }
+    }, [isDarkMode]);
+
+    const toggleTheme = () => {
+        setIsDarkMode((prev) => !prev);
+    };
+
     return (
         <div className="max-w-6xl mx-auto px-4 py-10 md:py-13">
             <nav className="flex md:flex-row justify-between items-center">
@@ -85,20 +108,61 @@ export default function NavigationBar() {
                             </Link>
                         </Reveal>
                     </ul>
-
-                    <span className="text-yellow-500">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24"
-                            width="1em"
-                            height="1em"
-                            >
-                            <path
-                                fill="currentColor"
-                                d="m6.05 4.14l-.39-.39a.993.993 0 0 0-1.4 0l-.01.01a.984.984 0 0 0 0 1.4l.39.39c.39.39 1.01.39 1.4 0l.01-.01a.984.984 0 0 0 0-1.4M3.01 10.5H1.99c-.55 0-.99.44-.99.99v.01c0 .55.44.99.99.99H3c.56.01 1-.43 1-.98v-.01c0-.56-.44-1-.99-1m9-9.95H12c-.56 0-1 .44-1 .99v.96c0 .55.44.99.99.99H12c.56.01 1-.43 1-.98v-.97c0-.55-.44-.99-.99-.99m7.74 3.21c-.39-.39-1.02-.39-1.41-.01l-.39.39a.984.984 0 0 0 0 1.4l.01.01c.39.39 1.02.39 1.4 0l.39-.39a.984.984 0 0 0 0-1.4m-1.81 15.1l.39.39a.996.996 0 1 0 1.41-1.41l-.39-.39a.993.993 0 0 0-1.4 0c-.4.4-.4 1.02-.01 1.41M20 11.49v.01c0 .55.44.99.99.99H22c.55 0 .99-.44.99-.99v-.01c0-.55-.44-.99-.99-.99h-1.01c-.55 0-.99.44-.99.99M12 5.5c-3.31 0-6 2.69-6 6s2.69 6 6 6s6-2.69 6-6s-2.69-6-6-6m-.01 16.95H12c.55 0 .99-.44.99-.99v-.96c0-.55-.44-.99-.99-.99h-.01c-.55 0-.99.44-.99.99v.96c0 .55.44.99.99.99m-7.74-3.21c.39.39 1.02.39 1.41 0l.39-.39a.993.993 0 0 0 0-1.4l-.01-.01a.996.996 0 0 0-1.41 0l-.39.39c-.38.4-.38 1.02.01 1.41"
-                            ></path>
-                        </svg>
-                    </span>
+                    
+                    {/* Theme Toggle Button */}
+                    <Reveal>
+                        <button
+                            onClick={toggleTheme}
+                            aria-label="Toggle Theme"
+                            className="flex items-center transition duration-300"
+                        >
+                            {isDarkMode ? (
+                            // Dark Mode SVG
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                width="1em"
+                                height="1em"
+                                >
+                                <path
+                                    fill="#eab308"
+                                    d="m6.05 4.14l-.39-.39a.993.993 0 0 0-1.4 0l-.01.01a.984.984 0 0 0 0 1.4l.39.39c.39.39 1.01.39 1.4 0l.01-.01a.984.984 0 0 0 0-1.4M3.01 10.5H1.99c-.55 0-.99.44-.99.99v.01c0 .55.44.99.99.99H3c.56.01 1-.43 1-.98v-.01c0-.56-.44-1-.99-1m9-9.95H12c-.56 0-1 .44-1 .99v.96c0 .55.44.99.99.99H12c.56.01 1-.43 1-.98v-.97c0-.55-.44-.99-.99-.99m7.74 3.21c-.39-.39-1.02-.39-1.41-.01l-.39.39a.984.984 0 0 0 0 1.4l.01.01c.39.39 1.02.39 1.4 0l.39-.39a.984.984 0 0 0 0-1.4m-1.81 15.1l.39.39a.996.996 0 1 0 1.41-1.41l-.39-.39a.993.993 0 0 0-1.4 0c-.4.4-.4 1.02-.01 1.41M20 11.49v.01c0 .55.44.99.99.99H22c.55 0 .99-.44.99-.99v-.01c0-.55-.44-.99-.99-.99h-1.01c-.55 0-.99.44-.99.99M12 5.5c-3.31 0-6 2.69-6 6s2.69 6 6 6s6-2.69 6-6s-2.69-6-6-6m-.01 16.95H12c.55 0 .99-.44.99-.99v-.96c0-.55-.44-.99-.99-.99h-.01c-.55 0-.99.44-.99.99v.96c0 .55.44.99.99.99m-7.74-3.21c.39.39 1.02.39 1.41 0l.39-.39a.993.993 0 0 0 0-1.4l-.01-.01a.996.996 0 0 0-1.41 0l-.39.39c-.38.4-.38 1.02.01 1.41"
+                                ></path>
+                            </svg>
+                            ) : (
+                            // Light Mode SVG
+                                <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                width="1em"
+                                height="1em"
+                                >
+                                <path
+                                    fill="#4f46e5"
+                                    d="M20.993 13.313a6 6 0 0 1-7.306-7.306a7 7 0 1 0 7.306 7.306"
+                                ></path>
+                                <path
+                                    fill="#4f46e5"
+                                    fillRule="evenodd"
+                                    d="M4.5 8.25a.5.5 0 0 1 .5.5v1.5a.5.5 0 0 1-1 0v-1.5a.5.5 0 0 1 .5-.5"
+                                    clipRule="evenodd"
+                                ></path>
+                                <path
+                                    fill="#4f46e5"
+                                    fillRule="evenodd"
+                                    d="M3.25 9.5a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1h-1.5a.5.5 0 0 1-.5-.5M7.5 3a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2a.5.5 0 0 1 .5-.5"
+                                    clipRule="evenodd"
+                                ></path>
+                                <path
+                                    fill="#4f46e5"
+                                    fillRule="evenodd"
+                                    d="M6 4.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5"
+                                    clipRule="evenodd"
+                                ></path>
+                                </svg>                         
+                            )}
+                        </button>
+                    </Reveal>
                 </div>
             </nav>
         </div>
