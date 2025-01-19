@@ -4,7 +4,12 @@ export default function BentoWrapper({ title, svg, children, additionalClass, vi
     { title: string, svg: React.ReactNode, children: React.ReactNode, additionalClass?: string , viewAll?: boolean }) {
     return (
         <div className={`${additionalClass}
-        col-span-12 bg-neutral-950 p-4 rounded-md border border-zinc-700 
+        col-span-12 
+        bg-white 
+        dark:bg-neutral-950 
+        p-4 rounded-md border 
+        border-neutral-200
+        dark:border-zinc-700 
         group/bento`}>
             { viewAll 
             ? 
