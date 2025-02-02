@@ -8,7 +8,7 @@ export default function CertificateFunction() {
             <SectionTitle title="Certificates and Accreditations" subtitle="A Showcase of My Most Recent Certificates and Professional Accreditations"/>
 
             <div className="w-full h-screen py-10 md:px-5">
-                <LayoutGrid cards={cards} imgClassName=""/>
+                <LayoutGrid cards={cards} imgClassName="object-cover"/>
             </div>
         </section>
     )

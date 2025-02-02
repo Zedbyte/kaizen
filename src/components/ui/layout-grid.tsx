@@ -31,12 +31,12 @@ type Card = {
                 onClick={() => handleClick(card)}
                 className={cn(
                 card.className,
-                "relative overflow-hidden border border-zinc-800",
+                "relative overflow-hidden border border-zinc-200 dark:border-zinc-800",
                 selected?.id === card.id
                     ? "rounded-lg cursor-pointer absolute inset-0 h-4/6 w-full md:w-10/12 m-auto z-50 flex justify-center items-center flex-wrap flex-col"
                     : lastSelected?.id === card.id
-                    ? "z-40 bg-neutral-950 rounded-md h-full w-full"
-                    : "bg-neutral-950 rounded-md h-full w-full "
+                    ? "z-40 bg-neutral-100 dark:bg-neutral-950 rounded-md h-full w-full"
+                    : "bg-neutral-100 dark:bg-neutral-950 rounded-md h-full w-full "
                 )}
                 layoutId={`card-${card.id}`}
             >
@@ -48,7 +48,7 @@ type Card = {
         <motion.div
             onClick={handleOutsideClick}
             className={cn(
-            "absolute h-full w-full left-0 top-0 bg-black opacity-0 z-10",
+            "absolute h-full w-full left-0 top-0 bg-gray-100 dark:bg-black opacity-0 z-10",
             selected?.id ? "pointer-events-auto" : "pointer-events-none"
             )}
             animate={{ opacity: selected?.id ? 0.3 : 0 }}
