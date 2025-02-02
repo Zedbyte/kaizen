@@ -14,7 +14,7 @@ export default function BentoWrapper({ title, svg, children, additionalClass, vi
             { viewAll 
             ? 
             <div className="flex justify-between">
-                <span className="flex items-center gap-2 text-zinc-400 group-hover/bento:translate-x-2 transition duration-200">
+                <span className="flex items-center gap-2 text-zinc-800 dark:text-zinc-400 group-hover/bento:translate-x-2 transition duration-200">
                     { svg }
                     <h1 className="font-bold">{ title }</h1>
                 </span>
@@ -34,7 +34,7 @@ export default function BentoWrapper({ title, svg, children, additionalClass, vi
                 </Link>
             </div> 
             : 
-                <span className="flex items-center gap-2 text-zinc-400 group-hover/bento:translate-x-2 transition-transform duration-200">
+                <span className="flex items-center gap-2 text-zinc-800 dark:text-zinc-400 group-hover/bento:translate-x-2 transition-transform duration-200">
                     { svg }
                     <h1 className="font-bold">{ title }</h1>
                 </span>

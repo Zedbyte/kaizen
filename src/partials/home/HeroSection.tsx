@@ -78,7 +78,7 @@ export default function HeroSection() {
                 <div className="flex w-6/12 space-x-9">
                     {/* Schedule a Call Button  */}
                     <a href="https://calendly.com/kaizxn/consultation" target="_blank" rel="noopener noreferrer"
-                    className="bg-[#1e1e1e] text-primary-light dark:text-primary-dark font-medium w-full py-2 rounded-full 
+                    className="bg-[#1e1e1e] text-primary-dark font-medium w-full py-2 rounded-full 
                     hover:bg-[#2b2b2b] border border-neutral-700 shadow-lg
                     transition duration-300 flex items-center justify-center">
                         <span className="flex items-center justify-center space-x-2">
