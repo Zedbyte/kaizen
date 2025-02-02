@@ -45,9 +45,9 @@ export default function TechStackSection() {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -20 }}
                     transition={{ duration: 0.3 }}
-                    className=" bg-neutral-950 rounded-lg shadow-2xl border border-stone-900 my-5 group/skills"
+                    className=" bg-white border-neutral-200 dark:bg-neutral-950 rounded-lg dark:shadow-2xl border dark:border-stone-900 my-5 group/skills"
                     >   
-                        <span className="flex items-center gap-2 text-zinc-400 group-hover/skills:translate-x-2 transition-transform duration-200 px-5 pt-5">
+                        <span className="flex items-center gap-2 text-zinc-800 dark:text-zinc-400 group-hover/skills:translate-x-2 transition-transform duration-200 px-5 pt-5">
                             <svg
                                 width="1em"
                                 height="1em"
@@ -67,7 +67,7 @@ export default function TechStackSection() {
                                     <Reveal>
                                         <div className="flex flex-row-reverse justify-start items-center">
                                             <h1 className="text-lg font-normal">{icon.name}</h1>
-                                            <div className="p-2 bg-gradient-to-br from-zinc-900 via-neutral-950 to-black border border-zinc-800 
+                                            <div className="p-2 bg-gradient-to-br from-zinc-100 via-neutral-100 to-gray-200 dark:from-zinc-900 dark:via-neutral-950 dark:to-black border border-zinc-300 dark:border-zinc-800 
                                             rounded-2xl mr-3 shadow-lg hover:scale-110 transition-transform duration-200">
                                                 <img src={icon.path} alt={icon.name} className="h-12 w-full" />
                                             </div>
