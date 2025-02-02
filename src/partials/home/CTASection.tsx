@@ -42,7 +42,7 @@ export default function CTASection() {
     // }, []);
 
     return (
-        <section className="relative flex flex-col items-center justify-center space-y-10 md:space-y-20 py-20 rounded-lg bg-gradient-to-b from-[#0e1118] to-[#0C0C0C] antialiased">
+        <section className="relative flex flex-col items-center justify-center space-y-10 md:space-y-20 py-20 rounded-lg bg-gradient-to-b from-[#f8f8f8] to-[#ececec] dark:from-[#0e1118] dark:to-[#0C0C0C] antialiased">
         {/* Background Canvas */}
         {/* <canvas
             ref={canvasRef}
@@ -60,7 +60,7 @@ export default function CTASection() {
 
         <div className="relative z-10">
             <button className="py-3 px-6 border rounded-lg text-lg font-bold transition-colors duration-200
-            dark:border-white dark:text-white hover:dark:text-black dark:hover:bg-gray-200">
+            border-black hover:bg-black hover:text-white dark:border-white dark:text-white hover:dark:text-black dark:hover:bg-gray-200">
                 Get in Touch
             </button>
         </div>
