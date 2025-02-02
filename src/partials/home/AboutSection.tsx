@@ -86,7 +86,7 @@ export default function AboutSection() {
                     <Timeline data={experienceData} />
                 </BentoWrapper>
 
-                {/* Services */}
+                {/* Recent Activity */}
                 <BentoWrapper 
                 title="Recent Activity"
                 svg={
@@ -112,7 +112,7 @@ export default function AboutSection() {
                     <div className="h-full flex items-center flex-grow">
                         {recentCommit ? (
                             <div className="flex items-center space-x-5">
-                                <figure className="p-2 bg-neutral-900 rounded-md">
+                                <figure className="p-2 bg-neutral-200 dark:bg-neutral-900 rounded-md">
                                     <svg
                                         width="5em"
                                         height="5em"

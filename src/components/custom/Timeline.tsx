@@ -15,9 +15,9 @@ export default function Timeline({ data } : TimelineProps) {
                 return (
                     <div key={index} className="relative pl-6 group">
                         {/* Circle */}
-                        <div className={`${index === 0 ? 'bg-white border' : 'border-2' } border-zinc-600 absolute left-0 top-4 w-3 h-3 rounded-full group`}>
-                            <div className={`${index === 0 ? 'bg-white animate-ping' : 'bg-black'}
-                                        group-hover:bg-white transition-colors duration-200 w-full h-full rounded-full`}>
+                        <div className={`${index === 0 ? 'bg-black dark:bg-white border' : 'border-2' } border-zinc-600 absolute left-0 top-4 w-3 h-3 rounded-full group`}>
+                            <div className={`${index === 0 ? 'bg-black dark:bg-white animate-ping' : 'bg-white dark:bg-black'}
+                                        dark:group-hover:bg-white group-hover:bg-black transition-colors duration-200 w-full h-full rounded-full`}>
                             </div>
                             <div className="absolute inset-0 rounded-full border-2 border-transparent"></div>
                         </div>
