@@ -41,14 +41,14 @@ const testimonialsProfessionals = [
     {
         quote: "All that we see or seem is but a dream within a dream.",
         name: "Mr. James Esquivel",
-        title: "Computer Science PhD, AUF College of Computer Studies",
+        title: "CS PhD, AUF College of Computer Studies",
         img: "/assets/testimonials/user.png"
     },
     {
         quote:
         "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
         name: "Mr. Joey Aviles",
-        title: "Graduate School, AUF College of Computer Studies",
+        title: "Head, AUF College of Computer Studies",
         img: "/assets/testimonials/user.png"
     },
     {
