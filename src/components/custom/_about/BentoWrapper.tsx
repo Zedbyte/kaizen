@@ -21,7 +21,7 @@ export default function BentoWrapper({ title, svg, children, additionalClass, vi
 
                 <Link to="/about" className="text-xs flex items-center">
                     <span className="flex items-center gap-2 text-zinc-400 hover:underline">
-                        <h1 className="text-white">View All</h1>
+                        <h1 className="text-black dark:text-white">View All</h1>
                         <svg
                             width="1em"
                             height="1em"
