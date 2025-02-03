@@ -10,7 +10,7 @@ function RootLayout({ children } : RootLayoutProps) {
 
   return (
     <>
-      <main className="dark:text-white w-full min-h-screen">
+      <main className="dark:text-white w-full min-h-screen bg-grid-small-black/[0.2] dark:bg-grid-transparent">
         <NavigationBar />
         <FloatingNav navItems={[
           {name: 'About', link: '#about'},
