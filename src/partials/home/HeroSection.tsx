@@ -10,7 +10,7 @@ import { Spotlight } from "@/components/ui/Spotlight";
 export default function HeroSection() {
     return (
         <>  
-            <section className="flex items-center justify-center h-[30rem]">
+            <section className="flex items-center justify-center h-[30rem] relative lg:static">
                 {/* Spotlight Effect */}
                 <div className="absolute h-full w-full overflow-hidden -z-20">
                     <Spotlight
@@ -31,7 +31,11 @@ export default function HeroSection() {
 
                 {/* Full Name */}
                 <TextGenerateEffect words={userData.name} 
-                className="absolute inset-x-0 flex justify-center text-[12rem] font-bold max-w-6xl mx-auto text-primary-light dark:text-primary-dark"/>
+                className="absolute flex justify-center  
+                bottom-0 lg:bottom-auto lg:inset-x-0
+                text-6xl lg:text-[12rem] 
+                text-center
+                font-bold max-w-6xl mx-auto text-primary-light dark:text-primary-dark"/>
 
                 {/* Avatar */}
                 <Reveal delay={1.5}>
@@ -39,7 +43,9 @@ export default function HeroSection() {
                         <img 
                             src={profileAvatar}
                             alt="Kaizen Profile Picture"
-                            className="h-full w-5/12 rounded-2xl object-contain pointer-events-none"
+                            className="h-full 
+                            w-7/12 lg:w-5/12 
+                            rounded-2xl object-contain pointer-events-none"
                         />
                     </figure>
                 </Reveal>
@@ -60,11 +66,15 @@ export default function HeroSection() {
                         </h1>
                     </Reveal> */}
                     <TextGenerateEffect words={userData.header.subtitle_bold + " " + userData.header.subtitle}
-                    className="text-6xl text-center font-bold text-primary-light dark:text-primary-dark" 
+                    className="
+                    text-3xl lg:text-6xl 
+                    text-center font-bold text-primary-light dark:text-primary-dark" 
                     keyword={true} substring={[0, 2]} additionalStyles="text-highlight"/>
                     
                     <Reveal>
-                        <h2 className="text-xl text-center text-primary-light dark:text-primary-dark">
+                        <h2 className="
+                        text-lg lg:text-xl 
+                        text-center text-primary-light dark:text-primary-dark">
                         A {userData.age}-year-old&nbsp;
                         <span>
                             <FlipWords className="font-bold text-highlight" words={userData.header.role} />
@@ -75,14 +85,17 @@ export default function HeroSection() {
 
 
                 {/* Button Section */}
-                <div className="flex w-6/12 space-x-9">
+                <div className="flex justify-center space-x-3 lg:w-6/12 lg:space-x-9">
                     {/* Schedule a Call Button  */}
                     <a href="https://calendly.com/kaizxn/consultation" target="_blank" rel="noopener noreferrer"
-                    className="bg-[#1e1e1e] text-primary-dark font-medium w-full py-2 rounded-full 
-                    hover:bg-[#2b2b2b] border border-neutral-700 shadow-lg
-                    transition duration-300 flex items-center justify-center">
-                        <span className="flex items-center justify-center space-x-2">
-                            <span>Schedule A Call</span>
+                    className="
+                    flex items-center justify-center
+                    lg:w-full">
+                        <span className="flex items-center justify-center lg:flex-1 space-x-2 font-medium py-2 rounded-full 
+                            bg-[#1e1e1e] text-primary-dark
+                            hover:bg-[#2b2b2b] border border-neutral-700 shadow-lg
+                            transition duration-300 px-4">
+                            <span className="text-nowrap">Schedule a Call</span>
                             <svg
                                 width="1em"
                                 height="1em"
@@ -102,7 +115,7 @@ export default function HeroSection() {
                         <HoverBorderGradient
                             containerClassName="rounded-full"
                             as="button"
-                            className="dark:bg-black bg-white text-primary-light dark:text-primary-dark flex items-center space-x-2 w-full"
+                            className="dark:bg-black bg-white text-primary-light dark:text-primary-dark flex items-center space-x-2 lg:w-full"
                         >
                             <p>View Resume</p>
                             <svg
