@@ -14,12 +14,12 @@ export default function HeroSection() {
                 {/* Spotlight Effect */}
                 <div className="absolute h-full w-full overflow-hidden -z-20">
                     <Spotlight
-                        className="-top-40 left-0 md:left-80 md:-top-10 "
+                        className="-top-30 left-0 md:left-80 md:-top-10 "
                         fill="gray"
                     />  
 
                     <Spotlight
-                        className="top-40 left-0 md:left-full md:top-20  h-[50vh]"
+                        className="top-20 left-full md:left-full md:top-20  h-[50vh]"
                         fill="#aa9d7d"
                     />
 
