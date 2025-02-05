@@ -105,11 +105,11 @@ export default function AboutSection() {
                         <img src={bentoGrid} alt="Bento Background Image" className="object-cover object-center h-full w-full"/>
                     </div>
                     {/* Bento Asset */}
-                    <div className="absolute  right-0 h-full opacity-65 pointer-events-none">
+                    <div className="absolute  right-0 h-full opacity-65 pointer-events-none hidden lg:block">
                         <img src={bentoAsset2} alt="Bento Background Image" className="object-cover object-center h-full w-full"/>
                     </div>
 
-                    <div className="h-full flex items-center flex-grow">
+                    <div className="h-full flex items-center flex-grow py-5 lg:py-0">
                         {recentCommit ? (
                             <div className="flex items-center space-x-5">
                                 <figure className="p-2 bg-neutral-200 dark:bg-neutral-900 rounded-md">
@@ -130,7 +130,7 @@ export default function AboutSection() {
                                         {new Date(recentCommit.created_at).getDate()}
                                     </h3>
 
-                                    <h1 className="text-lg font-bold">
+                                    <h1 className="text-md truncate lg:text-lg font-bold w-3/12 lg:w-6/12">
                                         {recentCommit.commit_message}
                                     </h1>
 
