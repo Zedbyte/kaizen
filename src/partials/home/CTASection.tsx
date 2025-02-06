@@ -52,14 +52,14 @@ export default function CTASection() {
 
         {/* Content */}
         <div className="relative z-10 text-center flex flex-col gap-5">
-            <h2 className="text-7xl font-semibold text-secondary-light dark:text-secondary-dark">Like What You're Seeing?</h2>
-            <p className="text-3xl dark:text-gray-400 font-medium">
+            <h2 className="text-5xl lg:text-7xl font-semibold text-secondary-light dark:text-secondary-dark">Like What You're Seeing?</h2>
+            <p className="text-2xl lg:text-3xl dark:text-gray-400 font-medium">
                 Let's work together to create something <FlipWords words={userData.cta.something} />
             </p>
         </div>
 
         <div className="relative z-10">
-            <button className="py-3 px-6 border rounded-lg text-lg font-bold transition-colors duration-200
+            <button className="py-3 px-6 border rounded-lg text-md lg:text-lg font-bold transition-colors duration-200
             border-black hover:bg-black hover:text-white dark:border-white dark:text-white hover:dark:text-black dark:hover:bg-gray-200">
                 Get in Touch
             </button>
