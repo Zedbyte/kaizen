@@ -18,7 +18,7 @@ export default function ProjectCard({ project  } : ProjectCardProps) {
         return (
             <div key={project.id} className="flex items-center justify-center h-[32.5rem] w-[80vw] sm:w-96">
             <PinContainer title={project.name} href={project.link} className="space-y-10">
-                <figure className="relative flex items-center justify-center w-[20vw] h-[25vh] 
+                <figure className="relative flex items-center justify-center w-[80vw] lg:w-[20vw] h-[25vh] 
                 overflow-hidden rounded-lg">
                     <div className="relative w-full h-full overflow-hidden rounded-lg bg-zinc-200 dark:bg-zinc-500">
                         <img src={bentoBg} alt="Card Background Image" />
